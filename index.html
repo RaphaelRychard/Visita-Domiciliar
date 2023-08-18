@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="pt-br">
 
@@ -22,7 +21,8 @@
                 <div class="col mb-3">
                     <label for="nome_user" class="form-label">Nome</label>
                     <input type="text" class="form-control removeCaracteresNumeros" id="nome_user"
-                           placeholder="Seu nome" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" aria-label="Digite seu nome" name="nome_user" minlength="3">
+                           placeholder="Seu nome" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" aria-label="Digite seu nome"
+                           name="nome_user" minlength="3">
                     <span class="mensagem-erro"></span>
                 </div>
                 <div class="col">
@@ -37,8 +37,10 @@
             <section class="row mb-4">
                 <div class="col">
                     <label for="data_nascimento_user" class="form-label">Data Nascimento</label>
-                    <input type="date" id="data_nascimento_user" class="form-control" placeholder="Data Nascimento" aria-label="Digite sua data de nascimento" name="data_nascimento_user" pattern="/^\d{1,2}\/\d{1,2}\/\d{4}$/" min="0" max="9999-12-31">
-                    <span class="mensagem-erro" ></span>
+                    <input type="date" id="data_nascimento_user" class="form-control" placeholder="Data Nascimento"
+                           aria-label="Digite sua data de nascimento" name="data_nascimento_user"
+                           pattern="/^\d{1,2}\/\d{1,2}\/\d{4}$/" min="0" max="9999-12-31">
+                    <span class="mensagem-erro"></span>
                 </div>
                 <div class="col">
                     <label for="idade_user" class="form-label">Idade</label>
@@ -52,7 +54,7 @@
                 <div class="col">
                     <label for="naturalidade_user" class="form-label">Naturalidade</label>
 
-                    <select class="form-select" id="estado_civil_user" aria-label="Digite seu Estado Civil" name="naturalidade_user">
+                    <select class="form-select" id="naturalidade_user" aria-label="Digite seu Estado Civil" name="naturalidade_user">
                         <option disabled selected>Selecione uma opção</option>
                         <option value="Não Informado(a)">Não Informado(a)</option>
                         <option value="AC">Acre</option>
@@ -86,8 +88,9 @@
 
                 </div>
                 <div class="col">
-                    <label for="" class="form-label">Estado Civil</label>
-                    <select class="form-select" id="" aria-label="Digite seu Estado Civil" name="estado_civil_user">
+                    <label for="estado_civil" class="form-label">Estado Civil</label>
+                    <select class="form-select" id="estado_civil" aria-label="Digite seu Estado Civil"
+                            name="estado_civil_user">
                         <option disabled selected>Selecione uma opção</option>
                         <option value="Não Informado(a)">Não Informado(a)</option>
                         <option value="Solteiro">Solteiro</option>
@@ -115,14 +118,15 @@
 
             <section class="row mb-4">
                 <div class="col ">
-                    <label for="orgao_expedidor_user" id="" class="form-label">Órgão Expedidor</label>
+                    <label for="orgao_expedidor_user" class="form-label">Órgão Expedidor</label>
                     <input type="text" id="orgao_expedidor_user" class="form-control removeCaracteresNumeros"
                            placeholder="Orgão Expedidor" aria-label="Digite seu orgão Expedidor"
                            name="orgao_expedidor_user">
                 </div>
                 <div class="col">
                     <label for="cpf_user" class="form-label obrigatorio">CPF (apenas números)</label>
-                    <input type="text" required id="cpf_user" class="form-control" name="cpf_user" onkeyup="ValidaCPF()" minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" >
+                    <input type="text" required id="cpf_user" class="form-control" name="cpf_user" onkeyup="ValidaCPF()"
+                           minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}">
                     <span class="mensagem-erro"></span>
                 </div>
             </section>
@@ -170,7 +174,8 @@
                 <div class="col mb-3">
                     <label for="filiacao_nome_mae" class="form-label">Nome da Mãe</label>
                     <input type="text" class="form-control removeCaracteresNumeros" id="filiacao_nome_mae"
-                           placeholder="Nome da mãe" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" aria-label="Digite seu nome" name="" minlength="3">
+                           placeholder="Nome da mãe" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" aria-label="Digite seu nome" name=""
+                           minlength="3">
                     <span class="mensagem-erro"></span>
                 </div>
                 <div class="col">
@@ -187,7 +192,8 @@
                 <div class="col mb-3">
                     <label for="filiacao_endereco" class="form-label">Endereço</label>
                     <input type="text" class="form-control removeCaracteresNumeros" id="filiacao_endereco"
-                           placeholder="Endereço" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" aria-label="Digite seu nome" name="" minlength="3">
+                           placeholder="Endereço" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" aria-label="Digite seu nome" name=""
+                           minlength="3">
                     <span class="mensagem-erro"></span>
                 </div>
                 <div class="col">
@@ -203,7 +209,8 @@
                 <div class="col mb-3">
                     <label for="filiacao_bairro" class="form-label">Bairro</label>
                     <input type="text" class="form-control removeCaracteresNumeros" id="filiacao_bairro"
-                           placeholder="Bairro" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" aria-label="Digite seu nome" name="" minlength="3">
+                           placeholder="Bairro" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" aria-label="Digite seu nome" name=""
+                           minlength="3">
                     <span class="mensagem-erro"></span>
                 </div>
                 <div class="col">
@@ -219,125 +226,140 @@
                 <div class="col mb-3">
                     <label for="filiacao_ponto_referencia" class="form-label">Ponto de Referência</label>
                     <input type="text" class="form-control removeCaracteresNumeros" id="filiacao_ponto_referencia"
-                           placeholder="Digite seu ponto referência" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" aria-label="Digite seu nome" name="" minlength="3">
+                           placeholder="Digite seu ponto referência" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+"
+                           aria-label="Digite seu nome" name="" minlength="3">
                     <span class="mensagem-erro"></span>
                 </div>
             </section>
 
-        </fieldset><fieldset class="mb-5">
-        <legend>Conjugue / Companheiro</legend>
-        <hr>
+        </fieldset>
+        <fieldset class="mb-5">
+            <legend>Conjugue / Companheiro</legend>
+            <hr>
 
-        <section class="row mb-4">
-            <div class="col mb-3">
-                <label for="companheiro_nome_completo" class="form-label">Nome Completo</label>
-                <input type="text" class="form-control removeCaracteresNumeros" id="companheiro_nome_completo"
-                       placeholder="Digite o nome completo" aria-label="Digite o nome completo" name="">
-                <span class="mensagem-erro"></span>
-            </div>
-        </section>
-
-        <section class="row mb-4">
-            <div class="col">
-                <label for="companheiro_data_nasc" class="form-label">Data Nascimento</label>
-                <input type="date" id="companheiro_data_nasc" class="form-control" placeholder="Data Nascimento"
-                       aria-label="Digite sua data de nascimento" name="" pattern="/^\d{1,2}\/\d{1,2}\/\d{4}$/" min="0"
-                       max="9999-12-31">
-                <span class="mensagem-erro"></span>
-            </div>
-            <div class="col">
-                <label for="companheiro_idade" class="form-label">Idade</label>
-                <input type="text" id="companheiro_idade" disabled value=""
-                       class=" form-control" placeholder="Sua idade" aria-label="Exibe a sua idade"
-                       name="idade_user">
-            </div>
-        </section>
-
-        <section class="row mb-4">
-            <div class="col">
-                <label for="companheiro_ocupacao" class="form-label">Ocupação</label>
-                <input type="text" class="form-control removeCaracteresNumeros" id="companheiro_ocupacao"
-                       placeholder="Digite ocupação" aria-label="Digite seu sobrenome completo"
-                       name="" minlength="5">
-                <span class="mensagem-erro"></span>
-            </div>
-            <div class="col">
-                <label for="companheiro_renda" class="hidden-md">Renda</label>
-                <div class="input-group mt-2">
-                    <span class="input-group-text">R$</span>
-                    <input type="text" id="companheiro_renda" class="form-control"
-                           onkeyup="formatarMoeda('companheiro_renda')" placeholder="" aria-label="Username"
-                           aria-describedby="basic-addon1" name="companheiro_renda">
+            <section class="row mb-4">
+                <div class="col mb-3">
+                    <label for="companheiro_nome_completo" class="form-label">Nome Completo</label>
+                    <input type="text" class="form-control removeCaracteresNumeros" id="companheiro_nome_completo"
+                           placeholder="Digite o nome completo" aria-label="Digite o nome completo" name="">
+                    <span class="mensagem-erro"></span>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="row mb-4">
-            <div class="col mb-3">
-                <label for="companheiro_rg" class="form-label">RG</label>
-                <input type="text" class="form-control removeCaracteresNumeros" id="companheiro_rg"
-                       placeholder="Digite o RG" aria-label="Digite seu nome" name="">
-                <span class="mensagem-erro"></span>
-            </div>
-            <div class="col">
-                <label for="companheiro_rg_data_expedicao" class="form-label">Data de Expedição</label>
-                <input type="date" id="companheiro_rg_data_expedicao" class="form-control" placeholder="Data de Expedição"
-                       aria-label="Digite sua data de nascimento" name="" pattern="/^\d{1,2}\/\d{1,2}\/\d{4}$/" min="0"
-                       max="9999-12-31">
-                <span class="mensagem-erro"></span>
-            </div>
-        </section>
+            <section class="row mb-4">
+                <div class="col">
+                    <label for="companheiro_data_nasc" class="form-label">Data Nascimento</label>
+                    <input type="date" id="companheiro_data_nasc" class="form-control" placeholder="Data Nascimento"
+                           aria-label="Digite sua data de nascimento" name="" pattern="/^\d{1,2}\/\d{1,2}\/\d{4}$/"
+                           min="0"
+                           max="9999-12-31">
+                    <span class="mensagem-erro"></span>
+                </div>
+                <div class="col">
+                    <label for="companheiro_idade" class="form-label">Idade</label>
+                    <input type="text" id="companheiro_idade" disabled value=""
+                           class=" form-control" placeholder="Sua idade" aria-label="Exibe a sua idade"
+                           name="idade_user">
+                </div>
+            </section>
 
-        <section class="row mb-4">
-            <div class="col mb-3">
-                <label for="" class="form-label">Órgão Expedidor</label>
-                <input type="text" class="form-control removeCaracteresNumeros" id=""
-                       placeholder="Digite seu orgão expedidor" aria-label="Digite seu nome" name="">
-                <span class="mensagem-erro"></span>
-            </div>
-            <div class="col">
-                <label for="companheiro_cpf" class="form-label obrigatorio">CPF (apenas números)</label>
-                <input type="text" id="companheiro_cpf" class="form-control" name="companheiro_cpf" onkeyup="ValidaCPFCompanheiro()" minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" autocomplete="none">
-                <span class="mensagem-erro"></span>
-            </div>
-
-        </section>
-    </fieldset><fieldset class="mb-5">
-        <legend>Trabalho e Remuneração</legend>
-        <hr>
-
-        <!-- Adicione uma div ou seção para conter os campos de cargo/função -->
-        <section id="camposCargoFuncao">
-            <section class="cargoFuncaoUser">
-                <!-- Campo inicial -->
-                <div class="row col">
-
-                    <label for="cargo-funcao-user" class="hidden-md">Cargo/Função</label>
-
-                    <div class="input-group mb-3 group-tabalho">
-                        <select class="form-select cargo-funcao-user" id="cargo-funcao-user" aria-label="Digite seu Estado Civil" name="trabalho_cargo_user[]">
-                            <option selected disabled>Selecione uma opção</option>
-                            <option value="Empregado com Carteira Assinada">Empregado com Carteira Assinada</option>
-                            <option value="Autônomo com Previdência">Autônomo com Previdência</option>
-                            <option value="Desempregado">Desempregado</option>
-                            <option value="Aposentado/Pensionista">Aposentado/Pensionista</option>
-                            <option value="Benefício de Prestação Continuada Idoso">Benefício de Prestação Continuada Idoso</option>
-                            <option value="Benefício de Prestação Continuada Pessoa com Deficiência">Benefício de Prestação Continuada Pessoa com Deficiência</option>
-                            <option value="Trabalhador Rural">Trabalhador Rural</option>
-                            <option value="Atividades extras">Atividades extras</option>
-                            <!-- Opções restantes aqui -->
-                        </select>
-
+            <section class="row mb-4">
+                <div class="col">
+                    <label for="companheiro_ocupacao" class="form-label">Ocupação</label>
+                    <input type="text" class="form-control removeCaracteresNumeros" id="companheiro_ocupacao"
+                           placeholder="Digite ocupação" aria-label="Digite seu sobrenome completo"
+                           name="" minlength="5">
+                    <span class="mensagem-erro"></span>
+                </div>
+                <div class="col">
+                    <label for="companheiro_renda" class="hidden-md">Renda</label>
+                    <div class="input-group mt-2">
                         <span class="input-group-text">R$</span>
-                        <input type="text" class="form-control preco salario_user" placeholder="" aria-label="Server" name="salario_user[]" id="salario_user" onkeyup="formatarMoeda('salario_user')" min="0">
-                        <button type="button" class="btn btn-danger" onclick="removerCampo(this)">Remover</button>
+                        <input type="text" id="companheiro_renda" class="form-control"
+                               onkeyup="formatarMoeda('companheiro_renda')" placeholder="" aria-label="Username"
+                               aria-describedby="basic-addon1" name="companheiro_renda">
                     </div>
                 </div>
             </section>
-        </section>
-        <button type="button" class="btn btn-primary" onclick="adicionarCampo()">Adicionar</button>
 
-    </fieldset>
+            <section class="row mb-4">
+                <div class="col mb-3">
+                    <label for="companheiro_rg" class="form-label">RG</label>
+                    <input type="text" class="form-control removeCaracteresNumeros" id="companheiro_rg"
+                           placeholder="Digite o RG" aria-label="Digite seu nome" name="">
+                    <span class="mensagem-erro"></span>
+                </div>
+                <div class="col">
+                    <label for="companheiro_rg_data_expedicao" class="form-label">Data de Expedição</label>
+                    <input type="date" id="companheiro_rg_data_expedicao" class="form-control"
+                           placeholder="Data de Expedição"
+                           aria-label="Digite sua data de nascimento" name="" pattern="/^\d{1,2}\/\d{1,2}\/\d{4}$/"
+                           min="0"
+                           max="9999-12-31">
+                    <span class="mensagem-erro"></span>
+                </div>
+            </section>
+
+            <section class="row mb-4">
+                <div class="col mb-3">
+                    <label for="" class="form-label">Órgão Expedidor</label>
+                    <input type="text" class="form-control removeCaracteresNumeros" id=""
+                           placeholder="Digite seu orgão expedidor" aria-label="Digite seu nome" name="">
+                    <span class="mensagem-erro"></span>
+                </div>
+                <div class="col">
+                    <label for="companheiro_cpf" class="form-label obrigatorio">CPF (apenas números)</label>
+                    <input type="text" id="companheiro_cpf" class="form-control" name="companheiro_cpf"
+                           onkeyup="ValidaCPFCompanheiro()" minlength="11" maxlength="14"
+                           pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" autocomplete="none">
+                    <span class="mensagem-erro"></span>
+                </div>
+
+            </section>
+        </fieldset>
+        <fieldset class="mb-5">
+            <legend>Trabalho e Remuneração</legend>
+            <hr>
+
+            <!-- Adicione uma div ou seção para conter os campos de cargo/função -->
+            <section id="camposCargoFuncao">
+                <section class="cargoFuncaoUser">
+                    <!-- Campo inicial -->
+                    <div class="row col">
+
+                        <label for="cargo-funcao-user" class="hidden-md">Cargo/Função</label>
+
+                        <div class="input-group mb-3 group-tabalho">
+                            <select class="form-select cargo-funcao-user" id="cargo-funcao-user"
+                                    aria-label="Digite seu Estado Civil" name="trabalho_cargo_user[]">
+                                <option selected disabled>Selecione uma opção</option>
+                                <option value="Empregado com Carteira Assinada">Empregado com Carteira Assinada</option>
+                                <option value="Autônomo com Previdência">Autônomo com Previdência</option>
+                                <option value="Desempregado">Desempregado</option>
+                                <option value="Aposentado/Pensionista">Aposentado/Pensionista</option>
+                                <option value="Benefício de Prestação Continuada Idoso">Benefício de Prestação
+                                    Continuada Idoso
+                                </option>
+                                <option value="Benefício de Prestação Continuada Pessoa com Deficiência">Benefício de
+                                    Prestação Continuada Pessoa com Deficiência
+                                </option>
+                                <option value="Trabalhador Rural">Trabalhador Rural</option>
+                                <option value="Atividades extras">Atividades extras</option>
+                                <!-- Opções restantes aqui -->
+                            </select>
+
+                            <span class="input-group-text">R$</span>
+                            <input type="text" class="form-control preco salario_user" placeholder=""
+                                   aria-label="Server" name="salario_user[]" id="salario_user"
+                                   onkeyup="formatarMoeda('salario_user')" min="0">
+                            <button type="button" class="btn btn-danger" onclick="removerCampo(this)">Remover</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <button type="button" class="btn btn-primary" onclick="adicionarCampo()">Adicionar</button>
+
+        </fieldset>
 
 
         <script>
@@ -368,109 +390,110 @@
                 }
                 c--
             }
-        </script><fieldset class="mb-5">
-        <legend>DESPESAS DA FAMÍLIA</legend>
-        <hr>
+        </script>
+        <fieldset class="mb-5">
+            <legend>DESPESAS DA FAMÍLIA</legend>
+            <hr>
 
-        <section class="row">
-            <div class="col">
-                <label for="renda_individual_user" class="hidden-md">Renda Individual</label>
-                <div class="input-group mb-3">
-                    <span class="input-group-text">R$</span>
-                    <input type="text" id="renda_individual_user" class="form-control"
-                           onkeyup="formatarMoeda('renda_individual_user')"
-                           aria-label="Dollar amount (with dot and two decimal places)" name="rendaIndividual">
+            <section class="row">
+                <div class="col">
+                    <label for="renda_individual_user" class="hidden-md">Renda Individual</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">R$</span>
+                        <input type="text" id="renda_individual_user" class="form-control"
+                               onkeyup="formatarMoeda('renda_individual_user')"
+                               aria-label="Dollar amount (with dot and two decimal places)" name="rendaIndividual">
+                    </div>
                 </div>
-            </div>
 
-            <div class="col">
-                <label for="renda_familiar_user" class="hidden-md">Renda Familiar</label>
-                <div class="input-group">
-                    <span class="input-group-text">R$</span>
-                    <input type="text" id="renda_familiar_user" class="form-control"
-                           onkeyup="formatarMoeda('renda_familiar_user')" placeholder="" aria-label="Username"
-                           aria-describedby="basic-addon1" name="rendaFamilia">
+                <div class="col">
+                    <label for="renda_familiar_user" class="hidden-md">Renda Familiar</label>
+                    <div class="input-group">
+                        <span class="input-group-text">R$</span>
+                        <input type="text" id="renda_familiar_user" class="form-control"
+                               onkeyup="formatarMoeda('renda_familiar_user')" placeholder="" aria-label="Username"
+                               aria-describedby="basic-addon1" name="rendaFamilia">
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="row mb-4">
-            <div class="col">
-                <label for="alimentacao_user" class="hidden-md">Alimentação</label>
-                <div class="input-group mb-3">
-                    <span class="input-group-text">R$</span>
-                    <input type="text" id="alimentacao_user" class="form-control"
-                           onkeyup="formatarMoeda('alimentacao_user')"
-                           aria-label="Dollar amount (with dot and two decimal places)" name="alimentacao">
+            <section class="row mb-4">
+                <div class="col">
+                    <label for="alimentacao_user" class="hidden-md">Alimentação</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">R$</span>
+                        <input type="text" id="alimentacao_user" class="form-control"
+                               onkeyup="formatarMoeda('alimentacao_user')"
+                               aria-label="Dollar amount (with dot and two decimal places)" name="alimentacao">
+                    </div>
                 </div>
-            </div>
 
-            <div class="col">
-                <label for="agua_user" class="hidden-md">Água</label>
-                <div class="input-group">
-                    <span class="input-group-text" id="basic-user">R$</span>
-                    <input type="text" id="agua_user" class="form-control" onkeyup="formatarMoeda('agua_user')"
-                           placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="gastoAgua">
+                <div class="col">
+                    <label for="agua_user" class="hidden-md">Água</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-user">R$</span>
+                        <input type="text" id="agua_user" class="form-control" onkeyup="formatarMoeda('agua_user')"
+                               placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="gastoAgua">
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="row mb-4">
-            <div class="col">
-                <label for="energia-eletrica-user" class="hidden-md">Energia Elétrica</label>
-                <div class="input-group mb-3">
-                    <span class="input-group-text">R$</span>
-                    <input type="text" id="energia-eletrica-user" class="form-control"
-                           onkeyup="formatarMoeda('energia-eletrica-user')"
-                           aria-label="Dollar amount (with dot and two decimal places)" name="gastoEnergiaEletrica">
+            <section class="row mb-4">
+                <div class="col">
+                    <label for="energia-eletrica-user" class="hidden-md">Energia Elétrica</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">R$</span>
+                        <input type="text" id="energia-eletrica-user" class="form-control"
+                               onkeyup="formatarMoeda('energia-eletrica-user')"
+                               aria-label="Dollar amount (with dot and two decimal places)" name="gastoEnergiaEletrica">
+                    </div>
                 </div>
-            </div>
 
-            <div class="col">
-                <label for="gas-user" class="hidden-md">Gás</label>
-                <div class="input-group">
-                    <span class="input-group-text" id="basic-addon1">R$</span>
-                    <input type="text" id="gas-user" class="form-control" onkeyup="formatarMoeda('gas-user')"
-                           placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="gastoGas">
+                <div class="col">
+                    <label for="gas-user" class="hidden-md">Gás</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">R$</span>
+                        <input type="text" id="gas-user" class="form-control" onkeyup="formatarMoeda('gas-user')"
+                               placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="gastoGas">
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="row mb-4">
-            <div class="col">
-                <label for="meicamento-regular_familia" class="hidden-md">Medicamentos de uso regular</label>
-                <div class="input-group mb-3">
-                    <span class="input-group-text">R$</span>
-                    <input type="text" id="meicamento-regular_familia" class="form-control"
-                           onkeyup="formatarMoeda('meicamento-regular_familia')"
-                           aria-label="Dollar amount (with dot and two decimal places)" name="gastoMedicamento">
+            <section class="row mb-4">
+                <div class="col">
+                    <label for="meicamento-regular_familia" class="hidden-md">Medicamentos de uso regular</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">R$</span>
+                        <input type="text" id="meicamento-regular_familia" class="form-control"
+                               onkeyup="formatarMoeda('meicamento-regular_familia')"
+                               aria-label="Dollar amount (with dot and two decimal places)" name="gastoMedicamento">
+                    </div>
                 </div>
-            </div>
 
-            <div>
-                <label for="transport-user" class="hidden-md">Transporte</label>
-                <div class="input-group">
-                    <span class="input-group-text">R$</span>
-                    <input type="text" id="transport-user" class="form-control"
-                           onkeyup="formatarMoeda('transport-user')" placeholder="" aria-label="Username"
-                           aria-describedby="basic-addon1" name="gastoTransporte">
+                <div>
+                    <label for="transport-user" class="hidden-md">Transporte</label>
+                    <div class="input-group">
+                        <span class="input-group-text">R$</span>
+                        <input type="text" id="transport-user" class="form-control"
+                               onkeyup="formatarMoeda('transport-user')" placeholder="" aria-label="Username"
+                               aria-describedby="basic-addon1" name="gastoTransporte">
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="row mb-4">
-            <div class="col">
-                <label for="outras_despesas_user" class="hidden-md">Outras despesas</label>
-                <div class="input-group mb-3">
-                    <span class="input-group-text">R$</span>
-                    <input type="text" class="form-control" id="outras_despesas_user"
-                           onkeyup="formatarMoeda('outras_despesas_user')"
-                           aria-label="Dollar amount (with dot and two decimal places)" name="gastroOutrasDespesa">
+            <section class="row mb-4">
+                <div class="col">
+                    <label for="outras_despesas_user" class="hidden-md">Outras despesas</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">R$</span>
+                        <input type="text" class="form-control" id="outras_despesas_user"
+                               onkeyup="formatarMoeda('outras_despesas_user')"
+                               aria-label="Dollar amount (with dot and two decimal places)" name="gastroOutrasDespesa">
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-    </fieldset>
+        </fieldset>
         <fieldset class="mb-5">
             <legend>FAMÍLIA OU ALGUM MEMBRO É BENEFICIÁRIO DE ALGUM PROGRAMA DO GOVERNO FEDERAL?</legend>
             <hr>
@@ -510,7 +533,8 @@
                     </label>
                 </div>
                 <div class="form-check" style="margin-left: 12px">
-                    <input class="form-check-input" type="checkbox" value="BPC" id="quais_beneficios_familia_bpc" disabled name="beneficios[]">
+                    <input class="form-check-input" type="checkbox" value="BPC" id="quais_beneficios_familia_bpc"
+                           disabled name="beneficios[]">
                     <label class="form-check-label" for="quais_beneficios_familia_bpc">
                         BPC
                     </label>
@@ -546,113 +570,115 @@
                 </div>
             </section>
 
-        </fieldset><fieldset class="mb-5">
-        <legend>Acesso à Saúde</legend>
-        <hr>
+        </fieldset>
+        <fieldset class="mb-5">
+            <legend>Acesso à Saúde</legend>
+            <hr>
 
-        <section>
-            <label>Usuáio Possui Cartão do SUS (CNS)</label>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="radio" name="cartao_sus_user" id="cartao_sus_sim_user"
-                       value="Sim" required>
-                <label class="form-check-label" for="cartao_sus_sim_user">
-                    Sim
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="radio" name="cartao_sus_user" id="cartao_sus_nao_user"
-                       value="Sim">
-                <label class="form-check-label" for="cartao_sus_nao_user">
-                    Não
-                </label>
-            </div>
-        </section>
+            <section>
+                <label>Usuáio Possui Cartão do SUS (CNS)</label>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="radio" name="cartao_sus_user" id="cartao_sus_sim_user"
+                           value="Sim" required>
+                    <label class="form-check-label" for="cartao_sus_sim_user">
+                        Sim
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="radio" name="cartao_sus_user" id="cartao_sus_nao_user"
+                           value="Sim">
+                    <label class="form-check-label" for="cartao_sus_nao_user">
+                        Não
+                    </label>
+                </div>
+            </section>
 
-        <section>
-            <label>Familia Possui Cartão do SUS (CNS)</label>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="radio" name="cartao_sus_familia" id="cartao_sus_sim_familia"
-                       value="Sim" required>
-                <label class="form-check-label" for="cartao_sus_sim_familia">
-                    Sim
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="radio" name="cartao_sus_familia" id="cartao_sus_nao_familia"
-                       value="Sim">
-                <label class="form-check-label" for="cartao_sus_nao_familia">
-                    Não
-                </label>
-            </div>
+            <section>
+                <label>Familia Possui Cartão do SUS (CNS)</label>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="radio" name="cartao_sus_familia" id="cartao_sus_sim_familia"
+                           value="Sim" required>
+                    <label class="form-check-label" for="cartao_sus_sim_familia">
+                        Sim
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="radio" name="cartao_sus_familia" id="cartao_sus_nao_familia"
+                           value="Sim">
+                    <label class="form-check-label" for="cartao_sus_nao_familia">
+                        Não
+                    </label>
+                </div>
 
-        </section>
+            </section>
 
-        <section>
-            <label>Carteira de Vacinação (Família com crianças de até sete anos sem carteira de vacinação)</label>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="radio" name="carteira_vacinacao"
-                       id="carteira_vacinacao_familia_sim" value="Sim" required>
-                <label class="form-check-label" for="carteira_vacinacao_familia_sim">
-                    Sim
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="radio" name="carteira_vacinacao"
-                       id="carteira_vacinacao_familia_nao" value="Sim">
-                <label class="form-check-label" for="carteira_vacinacao_familia_nao">
-                    Não
-                </label>
-            </div>
-        </section>
-    </fieldset><fieldset class="mb-5">
-        <legend>Acesso à Educação</legend>
-        <hr>
+            <section>
+                <label>Carteira de Vacinação (Família com crianças de até sete anos sem carteira de vacinação)</label>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="radio" name="carteira_vacinacao"
+                           id="carteira_vacinacao_familia_sim" value="Sim" required>
+                    <label class="form-check-label" for="carteira_vacinacao_familia_sim">
+                        Sim
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="radio" name="carteira_vacinacao"
+                           id="carteira_vacinacao_familia_nao" value="Sim">
+                    <label class="form-check-label" for="carteira_vacinacao_familia_nao">
+                        Não
+                    </label>
+                </div>
+            </section>
+        </fieldset>
+        <fieldset class="mb-5">
+            <legend>Acesso à Educação</legend>
+            <hr>
 
-        <section>
-            <label for="adolecentes_matriculados">Todas as crianças e adolescentes estão matriculados na rede
-                escolar?</label>
-            <div class="form-check" style="margin-left: 12px;" id="adolecentes_matriculados">
-                <input class="form-check-input" type="radio" name="adolecentes_matriculados"
-                       id="adolecentes_matriculados_sim" value="Sim" required>
-                <label class="form-check-label" for="adolecentes_matriculados_sim">
-                    Sim
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="radio" name="adolecentes_matriculados"
-                       id="adolecentes_matriculados_nao" value="Sim">
-                <label class="form-check-label" for="adolecentes_matriculados_nao">
-                    Não
-                </label>
-            </div>
-        </section>
+            <section>
+                <label for="adolecentes_matriculados">Todas as crianças e adolescentes estão matriculados na rede
+                    escolar?</label>
+                <div class="form-check" style="margin-left: 12px;" id="adolecentes_matriculados">
+                    <input class="form-check-input" type="radio" name="adolecentes_matriculados"
+                           id="adolecentes_matriculados_sim" value="Sim" required>
+                    <label class="form-check-label" for="adolecentes_matriculados_sim">
+                        Sim
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="radio" name="adolecentes_matriculados"
+                           id="adolecentes_matriculados_nao" value="Sim">
+                    <label class="form-check-label" for="adolecentes_matriculados_nao">
+                        Não
+                    </label>
+                </div>
+            </section>
 
-        <section>
-            <label for="assiduamente_escola">Estão frequentando assiduamente a escola?</label>
-            <div class="form-check" style="margin-left: 12px;" id="assiduamente_escola">
-                <input class="form-check-input" type="radio" name="assiduamente_escola"
-                       id="assiduamente_escola_user_sim" value="Sim" required>
+            <section>
+                <label for="assiduamente_escola">Estão frequentando assiduamente a escola?</label>
+                <div class="form-check" style="margin-left: 12px;" id="assiduamente_escola">
+                    <input class="form-check-input" type="radio" name="assiduamente_escola"
+                           id="assiduamente_escola_user_sim" value="Sim" required>
 
-                <label class="form-check-label" for="assiduamente_escola_user_sim">
-                    Sim
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="radio" name="assiduamente_escola"
-                       id="assiduamente_escola_user_nao" value="Sim">
-                <label class="form-check-label" for="assiduamente_escola_user_nao">
-                    Não
-                </label>
-            </div>
-            <div class="form-floating">
+                    <label class="form-check-label" for="assiduamente_escola_user_sim">
+                        Sim
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="radio" name="assiduamente_escola"
+                           id="assiduamente_escola_user_nao" value="Sim">
+                    <label class="form-check-label" for="assiduamente_escola_user_nao">
+                        Não
+                    </label>
+                </div>
+                <div class="form-floating">
                     <textarea class="form-control" name="assiduamente_escola_descricao"
                               placeholder="Leave a comment here" id="assiduamente_escola_user_observacao"
                               style="height: 100px" required></textarea>
-                <label for="assiduamente_escola_user_observacao">Obervação</label>
-            </div>
-        </section>
+                    <label for="assiduamente_escola_user_observacao">Obervação</label>
+                </div>
+            </section>
 
-    </fieldset>
+        </fieldset>
         <fieldset class="mb-5">
             <legend>Grupo Familiar</legend>
             <hr>
@@ -688,12 +714,12 @@
                         Não
                     </label>
                 </div>
-                <div class="form-floating mt-2 mb-4" id="gestantes_familia_observacao">
-            <textarea class="form-control"
-                      placeholder="Leave a comment here"
-                      id="gestantes_familia_observacao"
-                      style="height: 100px"
-                      name="gestantes_familia_observacao"></textarea>
+                <div class="form-floating mt-2 mb-4">
+                    <textarea class="form-control"
+                              placeholder="Leave a comment here"
+                              id="gestantes_familia_observacao"
+                              style="height: 100px"
+                              name="gestantes_familia_observacao"></textarea>
                     <label for="gestantes_familia_observacao">Observação</label>
                 </div>
             </section>
@@ -783,9 +809,9 @@
 
                 <div class="form-floating mb-4">
                        <textarea class="form-control" placeholder="Leave a comment here"
-                                 id="gestantes_familia_observacao"
+                                 id="tipo_deficiencia_observacao"
                                  style="height: 100px" name="tipo_deficiencia_observacao"></textarea>
-                    <label for="floatingTextarea2">Obervação</label>
+                    <label for="tipo_deficiencia_observacao">Obervação</label>
                 </div>
             </section>
 
@@ -819,7 +845,8 @@
                 </div>
 
                 <div class="form-floating mb-4">
-                           <textarea class="form-control" placeholder="Leave a comment here" id="pessoa_idosa_observacao"
+                           <textarea class="form-control" placeholder="Leave a comment here"
+                                     id="pessoa_idosa_observacao"
                                      style="height: 100px" name="pessoa_idosa_observacao"></textarea>
                     <label for="pessoa_idosa_observacao">Obervação</label>
                 </div>
@@ -830,7 +857,8 @@
 
                 <div class="input-group">
                     <div class="input-group-text">
-                        <input class="form-check-input" type="radio" name="pessoa_tem_documentacao" id="pessoa_tem_documentacao_sim" value="Sim">
+                        <input class="form-check-input" type="radio" name="pessoa_tem_documentacao"
+                               id="pessoa_tem_documentacao_sim" value="Sim">
                         <label class="form-check-label" for="pessoa_tem_documentacao_sim" style="padding-left: 10px">
                             Sim, quantas
                         </label>
@@ -855,7 +883,9 @@
                 </div>
 
                 <div class="form-floating mb-4">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="pessoa_tem_documentacao_observacao" style="height: 100px" name="pessoa_tem_documentacao_observacao"></textarea>
+                    <textarea class="form-control" placeholder="Leave a comment here"
+                              id="pessoa_tem_documentacao_observacao" style="height: 100px"
+                              name="pessoa_tem_documentacao_observacao"></textarea>
                     <label for="floatingTextarea2">Obervação</label>
                 </div>
 
@@ -872,7 +902,9 @@
                     </div>
 
                     <div class="form-floating mt-2 mb-4">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="situacao_imovel_observacao" style="height: 100px" name="situacao_imovel_observacao"></textarea>
+                        <textarea class="form-control" placeholder="Leave a comment here"
+                                  id="situacao_imovel_observacao" style="height: 100px"
+                                  name="situacao_imovel_observacao"></textarea>
                         <label for="floatingTextarea2">Obervação</label>
                     </div>
                 </div>
@@ -880,295 +912,327 @@
             </section>
 
 
-        </fieldset><fieldset class="mb-5">
-        <legend>Materiais usados na contrução do seu domicílio</legend>
-        <hr>
+        </fieldset>
+        <fieldset class="mb-5">
+            <legend>Materiais usados na contrução do seu domicílio</legend>
+            <hr>
 
-        <section class="mb-4">
-            <label>Qual material é predominante na construção do seu domicílio?</label>
+            <section class="mb-4">
+                <label>Qual material é predominante na construção do seu domicílio?</label>
 
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Tijolo" id="construcao_domicilio_tijolo" name="construcao_domicilio[]">
-                <label class="form-check-label" for="construcao_domicilio_tijolo">
-                    Tijolo
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Madeira" id="construcao_domicilio_madeira" name="construcao_domicilio[]">
-                <label class="form-check-label" for="construcao_domicilio_madeira">
-                    Madeira
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Adobe" id="construcao_domicilio_adobe" name="construcao_domicilio[]">
-                <label class="form-check-label" for="construcao_domicilio_adobe">
-                    Adobe
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Palha com alvenaria" id="construcao_domicilio_palhaAlvenaria" name="construcao_domicilio[]">
-                <label class="form-check-label" for="construcao_domicilio_palhaAlvenaria">
-                    Palha com alvenaria
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Palha" id="construcao_domicilio_palha" name="construcao_domicilio[]">
-                <label class="form-check-label" for="construcao_domicilio_palha">
-                    Palha
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Material improvisado" id="construcao_domicilio_meterialImporvisado" name="construcao_domicilio[]">
-                <label class="form-check-label" for="construcao_domicilio_meterialImporvisado">
-                    Material improvisado
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Outro" id="construcao_domicilio_outro" name="construcao_domicilio[]">
-                <label class="form-check-label" for="construcao_domicilio_outro">
-                    Outro
-                </label>
-            </div>
-        </section>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Tijolo" id="construcao_domicilio_tijolo"
+                           name="construcao_domicilio[]">
+                    <label class="form-check-label" for="construcao_domicilio_tijolo">
+                        Tijolo
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Madeira" id="construcao_domicilio_madeira"
+                           name="construcao_domicilio[]">
+                    <label class="form-check-label" for="construcao_domicilio_madeira">
+                        Madeira
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Adobe" id="construcao_domicilio_adobe"
+                           name="construcao_domicilio[]">
+                    <label class="form-check-label" for="construcao_domicilio_adobe">
+                        Adobe
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Palha com alvenaria"
+                           id="construcao_domicilio_palhaAlvenaria" name="construcao_domicilio[]">
+                    <label class="form-check-label" for="construcao_domicilio_palhaAlvenaria">
+                        Palha com alvenaria
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Palha" id="construcao_domicilio_palha"
+                           name="construcao_domicilio[]">
+                    <label class="form-check-label" for="construcao_domicilio_palha">
+                        Palha
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Material improvisado"
+                           id="construcao_domicilio_meterialImporvisado" name="construcao_domicilio[]">
+                    <label class="form-check-label" for="construcao_domicilio_meterialImporvisado">
+                        Material improvisado
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Outro" id="construcao_domicilio_outro"
+                           name="construcao_domicilio[]">
+                    <label class="form-check-label" for="construcao_domicilio_outro">
+                        Outro
+                    </label>
+                </div>
+            </section>
 
-        <section class="mb-4">
-            <label>Qual é a forma de iluminação utilizada no seu domicílio?</label>
+            <section class="mb-4">
+                <label>Qual é a forma de iluminação utilizada no seu domicílio?</label>
 
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Relógio próprio" id="iluminacao_domicilio_relogio_padrao" name="iluminacao_domicilio[]">
-                <label class="form-check-label" for="iluminacao_domicilio_relogio_padrao">
-                    Relógio próprio
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Sem relógio" id="iluminacao_domicilio_sem_relogio" name="iluminacao_domicilio[]">
-                <label class="form-check-label" for="iluminacao_domicilio_sem_relogio">
-                    Sem relógio
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Vela" id="iluminacao_domicilio_vela" name="iluminacao_domicilio[]">
-                <label class="form-check-label" for="iluminacao_domicilio_vela">
-                    Vela
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Lampião" id="iluminacao_domicilio_lampiao" name="iluminacao_domicilio[]">
-                <label class="form-check-label" for="iluminacao_domicilio_lampiao">
-                    Lampião
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Outro" id="iluminacao_domicilio_outro" name="iluminacao_domicilio[]">
-                <label class="form-check-label" for="iluminacao_domicilio_outro">
-                    Outro
-                </label>
-            </div>
-        </section>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Relógio próprio"
+                           id="iluminacao_domicilio_relogio_padrao" name="iluminacao_domicilio[]">
+                    <label class="form-check-label" for="iluminacao_domicilio_relogio_padrao">
+                        Relógio próprio
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Sem relógio"
+                           id="iluminacao_domicilio_sem_relogio" name="iluminacao_domicilio[]">
+                    <label class="form-check-label" for="iluminacao_domicilio_sem_relogio">
+                        Sem relógio
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Vela" id="iluminacao_domicilio_vela"
+                           name="iluminacao_domicilio[]">
+                    <label class="form-check-label" for="iluminacao_domicilio_vela">
+                        Vela
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Lampião" id="iluminacao_domicilio_lampiao"
+                           name="iluminacao_domicilio[]">
+                    <label class="form-check-label" for="iluminacao_domicilio_lampiao">
+                        Lampião
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Outro" id="iluminacao_domicilio_outro"
+                           name="iluminacao_domicilio[]">
+                    <label class="form-check-label" for="iluminacao_domicilio_outro">
+                        Outro
+                    </label>
+                </div>
+            </section>
 
-        <section class="mb-4">
-            <label>Qual é a forma de abastecimento de àgua utlizada no seu domucílio?</label>
+            <section class="mb-4">
+                <label>Qual é a forma de abastecimento de àgua utlizada no seu domucílio?</label>
 
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Rede pública" id="agua_domicilio_rede_publica" name="agua_domicilio[]">
-                <label class="form-check-label" for="agua_domicilio_rede_publica">
-                    Rede pública
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Poço/Nascente" id="agua_domicilio_poco_nascente" name="agua_domicilio[]">
-                <label class="form-check-label" for="agua_domicilio_poco_nascente">
-                    Poço/Nascente
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Carro pipa" id="agua_domicilio_carro_pipa" name="agua_domicilio[]">
-                <label class="form-check-label" for="agua_domicilio_carro_pipa">
-                    Carro pipa
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Outro" id="agua_domicilio_outro" name="agua_domicilio[]">
-                <label class="form-check-label" for="agua_domicilio_outro">
-                    Outro
-                </label>
-            </div>
-        </section>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Rede pública"
+                           id="agua_domicilio_rede_publica" name="agua_domicilio[]">
+                    <label class="form-check-label" for="agua_domicilio_rede_publica">
+                        Rede pública
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Poço/Nascente"
+                           id="agua_domicilio_poco_nascente" name="agua_domicilio[]">
+                    <label class="form-check-label" for="agua_domicilio_poco_nascente">
+                        Poço/Nascente
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Carro pipa" id="agua_domicilio_carro_pipa"
+                           name="agua_domicilio[]">
+                    <label class="form-check-label" for="agua_domicilio_carro_pipa">
+                        Carro pipa
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Outro" id="agua_domicilio_outro"
+                           name="agua_domicilio[]">
+                    <label class="form-check-label" for="agua_domicilio_outro">
+                        Outro
+                    </label>
+                </div>
+            </section>
 
-        <section class="mb-4">
-            <label>Qual tratamento è dado a á agua consumida pela família?</label>
+            <section class="mb-4">
+                <label>Qual tratamento è dado a á agua consumida pela família?</label>
 
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Filtrada" id="tratamento_agua_filtrada" name="tratamento_agua[]">
-                <label class="form-check-label" for="tratamento_agua_filtrada">
-                    Filtrada
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Fervida" id="tratamento_agua_fervida" name="tratamento_agua[]">
-                <label class="form-check-label" for="tratamento_agua_fervida">
-                    Fervida
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Mineral" id="tratamento_agua_mineral" name="tratamento_agua[]">
-                <label class="form-check-label" for="tratamento_agua_mineral">
-                    Mineral
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Outro" id="tratamento_agua_outro" name="tratamento_agua[]">
-                <label class="form-check-label" for="tratamento_agua_outro">
-                    Outro
-                </label>
-            </div>
-        </section>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Filtrada" id="tratamento_agua_filtrada"
+                           name="tratamento_agua[]">
+                    <label class="form-check-label" for="tratamento_agua_filtrada">
+                        Filtrada
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Fervida" id="tratamento_agua_fervida"
+                           name="tratamento_agua[]">
+                    <label class="form-check-label" for="tratamento_agua_fervida">
+                        Fervida
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Mineral" id="tratamento_agua_mineral"
+                           name="tratamento_agua[]">
+                    <label class="form-check-label" for="tratamento_agua_mineral">
+                        Mineral
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Outro" id="tratamento_agua_outro"
+                           name="tratamento_agua[]">
+                    <label class="form-check-label" for="tratamento_agua_outro">
+                        Outro
+                    </label>
+                </div>
+            </section>
 
-        <section class="mb-4">
-            <label>Qual a estrutura de escoamento sanitário?</label>
+            <section class="mb-4">
+                <label>Qual a estrutura de escoamento sanitário?</label>
 
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Rede pública" id="escoamento_sanitário_rede_public" name="escoamento_sanitario[]">
-                <label class="form-check-label" for="escoamento_sanitário_rede_public">
-                    Rede pública
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Fossa rudimentar" id="escoamento_sanitário_fossa_rudimentar" name="escoamento_sanitario[]">
-                <label class="form-check-label" for="escoamento_sanitário_fossa_rudimentar">
-                    Fossa rudimentar
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Céu aberto" id="escoamento_sanitário_ceu_aberto" name="escoamento_sanitario[]">
-                <label class="form-check-label" for="escoamento_sanitário_ceu_aberto">
-                    Céu aberto
-                </label>
-            </div>
-            <div class="form-check" style="margin-left: 12px;">
-                <input class="form-check-input" type="checkbox" value="Outro" id="escoamento_sanitário_outro" name="escoamento_sanitario[]">
-                <label class="form-check-label" for="escoamento_sanitário_outro">
-                    Outro
-                </label>
-            </div>
-        </section>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Rede pública"
+                           id="escoamento_sanitário_rede_public" name="escoamento_sanitario[]">
+                    <label class="form-check-label" for="escoamento_sanitário_rede_public">
+                        Rede pública
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Fossa rudimentar"
+                           id="escoamento_sanitário_fossa_rudimentar" name="escoamento_sanitario[]">
+                    <label class="form-check-label" for="escoamento_sanitário_fossa_rudimentar">
+                        Fossa rudimentar
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Céu aberto"
+                           id="escoamento_sanitário_ceu_aberto" name="escoamento_sanitario[]">
+                    <label class="form-check-label" for="escoamento_sanitário_ceu_aberto">
+                        Céu aberto
+                    </label>
+                </div>
+                <div class="form-check" style="margin-left: 12px;">
+                    <input class="form-check-input" type="checkbox" value="Outro" id="escoamento_sanitário_outro"
+                           name="escoamento_sanitario[]">
+                    <label class="form-check-label" for="escoamento_sanitário_outro">
+                        Outro
+                    </label>
+                </div>
+            </section>
 
-    </fieldset><fieldset class="mb-5">
-        <legend>Composição familiar dos moradores do domicílio</legend>
-        <hr>
+        </fieldset>
+        <fieldset class="mb-5">
+            <legend>Composição familiar dos moradores do domicílio</legend>
+            <hr>
 
-        <section class="container">
-            <div id="form-container">
-                <!-- Aqui começa o formulário inicial -->
-                <div class="row moradores-domicilio" style="align-items: center;">
-                    <div class="moradores-domicilio mt-3" id="moradores-domicilio">
-                        <div class="row moradores-domicilio" style="align-items: center;">
+            <section class="container">
+                <div id="form-container">
+                    <!-- Aqui começa o formulário inicial -->
+                    <div class="row moradores-domicilio" style="align-items: center;">
+                        <div class="moradores-domicilio mt-3" id="moradores-domicilio">
                             <div class="row moradores-domicilio" style="align-items: center;">
-                                <div class="moradores-domicilio mt-3" id="moradores-domicilio">
-                                    <div class="row">
-                                        <div class="col mb-3">
-                                            <label for="nome_completo" class="form-label">Nome Completo:</label>
-                                            <input type="text" class="form-control" id="nome_completo"
-                                                   placeholder="Seu nome completo"
-                                                   aria-label="Digite seu nome completo">
+                                <div class="row moradores-domicilio" style="align-items: center;">
+                                    <div class="moradores-domicilio mt-3">
+                                        <div class="row">
+                                            <div class="col mb-3">
+                                                <label for="nome_completo" class="form-label">Nome Completo:</label>
+                                                <input type="text" class="form-control" id="nome_completo"
+                                                       placeholder="Seu nome completo"
+                                                       aria-label="Digite seu nome completo">
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="row">
-                                        <div class="col mb-3">
-                                            <label for="data_nascimento" class="form-label">Data de nascimento:</label>
-                                            <input type="date" class="form-control" id="data_nascimento"
-                                                   placeholder="Data de nascimento"
-                                                   aria-label="Digite sua data de nascimento">
+                                        <div class="row">
+                                            <div class="col mb-3">
+                                                <label for="data_nascimento" class="form-label">Data de
+                                                    nascimento:</label>
+                                                <input type="date" class="form-control" id="data_nascimento"
+                                                       placeholder="Data de nascimento"
+                                                       aria-label="Digite sua data de nascimento">
+                                            </div>
+                                            <div class="col">
+                                                <label for="idade" class="form-label">Idade</label>
+                                                <input type="number" min="0" class="form-control" id="idade"
+                                                       placeholder="Sua idade"
+                                                       aria-label="Digite sua idade">
+                                            </div>
                                         </div>
-                                        <div class="col">
-                                            <label for="idade" class="form-label">Idade</label>
-                                            <input type="number" min="0" class="form-control" id="idade"
-                                                   placeholder="Sua idade"
-                                                   aria-label="Digite sua idade">
-                                        </div>
-                                    </div>
 
-                                    <div class="row">
-                                        <div class="col mb-3">
-                                            <label for="rg" class="form-label">RG:</label>
-                                            <input type="text" class="form-control" id="rg" placeholder="Seu RG"
-                                                   aria-label="Digite seu RG">
+                                        <div class="row">
+                                            <div class="col mb-3">
+                                                <label for="rg" class="form-label">RG:</label>
+                                                <input type="text" class="form-control" id="rg" placeholder="Seu RG"
+                                                       aria-label="Digite seu RG">
+                                            </div>
+                                            <div class="col">
+                                                <label for="data_expedicao" class="form-label">Data de
+                                                    Expedição:</label>
+                                                <input type="text" class="form-control" id="data_expedicao"
+                                                       placeholder="Data de Expedição do RG"
+                                                       aria-label="Digite a data de expedição do RG">
+                                            </div>
                                         </div>
-                                        <div class="col">
-                                            <label for="data_expedicao" class="form-label">Data de Expedição:</label>
-                                            <input type="text" class="form-control" id="data_expedicao"
-                                                   placeholder="Data de Expedição do RG"
-                                                   aria-label="Digite a data de expedição do RG">
-                                        </div>
-                                    </div>
 
-                                    <div class="row">
-                                        <div class="col mb-3">
-                                            <label for="orgao_expedidor" class="form-label">Órgão Expedidor:</label>
-                                            <input type="text" class="form-control" id="orgao_expedidor"
-                                                   placeholder="Órgão expedidor do RG"
-                                                   aria-label="Digite o órgão expedidor do RG">
+                                        <div class="row">
+                                            <div class="col mb-3">
+                                                <label for="orgao_expedidor" class="form-label">Órgão Expedidor:</label>
+                                                <input type="text" class="form-control" id="orgao_expedidor"
+                                                       placeholder="Órgão expedidor do RG"
+                                                       aria-label="Digite o órgão expedidor do RG">
+                                            </div>
+                                            <div class="col">
+                                                <label for="algum_familiar_cpf" class="form-label obrigatorio">CPF
+                                                    (apenas
+                                                    números)</label>
+                                                <input type="text" required id="algum_familiar_cpf" class="form-control"
+                                                       name="algum_familiar_cpf" onkeyup="ValidaCPFCompanheiro2()"
+                                                       minlength="11" maxlength="14"
+                                                       pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
+                                                       autocomplete="none">
+                                                <span class="mensagem-erro"></span>
+                                            </div>
                                         </div>
-                                        <div class="col">
-                                            <label for="algum_familiar_cpf" class="form-label obrigatorio">CPF (apenas
-                                                números)</label>
-                                            <input type="text" required id="algum_familiar_cpf" class="form-control"
-                                                   name="algum_familiar_cpf" onkeyup="ValidaCPFCompanheiro2()"
-                                                   minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
-                                                   autocomplete="none">
-                                            <span class="mensagem-erro"></span>
-                                        </div>
-                                    </div>
 
-                                    <div class="row">
-                                        <div class="col mb-3">
-                                            <label for="cns" class="form-label">CNS:</label>
-                                            <input type="text" class="form-control" id="cns" placeholder="Seu CNS"
-                                                   aria-label="Digite seu Cartão Nacional de Saúde (CNS)">
+                                        <div class="row">
+                                            <div class="col mb-3">
+                                                <label for="cns" class="form-label">CNS:</label>
+                                                <input type="text" class="form-control" id="cns" placeholder="Seu CNS"
+                                                       aria-label="Digite seu Cartão Nacional de Saúde (CNS)">
+                                            </div>
+                                            <div class="col">
+                                                <label for="ocupacao" class="form-label">Ocupação:</label>
+                                                <input type="text" class="form-control" id="ocupacao"
+                                                       placeholder="Sua ocupação"
+                                                       aria-label="Digite sua ocupação">
+                                            </div>
                                         </div>
-                                        <div class="col">
-                                            <label for="ocupacao" class="form-label">Ocupação:</label>
-                                            <input type="text" class="form-control" id="ocupacao" placeholder="Sua ocupação"
-                                                   aria-label="Digite sua ocupação">
-                                        </div>
-                                    </div>
 
-                                    <div class="row">
-                                        <div class="col mb-3">
-                                            <label for="renda" class="form-label">Renda:</label>
-                                            <input type="text" class="form-control" id="renda" placeholder="Sua renda"
-                                                   aria-label="Digite sua renda">
+                                        <div class="row">
+                                            <div class="col mb-3">
+                                                <label for="renda" class="form-label">Renda:</label>
+                                                <input type="text" class="form-control" id="renda"
+                                                       placeholder="Sua renda"
+                                                       aria-label="Digite sua renda">
+                                            </div>
+                                            <div class="col">
+                                                <label for="escolaridade" class="form-label">Escolaridade:</label>
+                                                <input type="text" class="form-control" id="escolaridade"
+                                                       placeholder="Sua escolaridade"
+                                                       aria-label="Digite sua escolaridade">
+                                            </div>
                                         </div>
-                                        <div class="col">
-                                            <label for="escolaridade" class="form-label">Escolaridade:</label>
-                                            <input type="text" class="form-control" id="escolaridade"
-                                                   placeholder="Sua escolaridade"
-                                                   aria-label="Digite sua escolaridade">
-                                        </div>
-                                    </div>
 
-                                    <div class="row mb-4">
-                                        <div class="col mb-3">
-                                            <label for="parentesco" class="form-label">Parentesco:</label>
-                                            <input type="text" class="form-control" id="parentesco"
-                                                   placeholder="Seu parentesco"
-                                                   aria-label="Digite seu parentesco">
+                                        <div class="row mb-4">
+                                            <div class="col mb-3">
+                                                <label for="parentesco" class="form-label">Parentesco:</label>
+                                                <input type="text" class="form-control" id="parentesco"
+                                                       placeholder="Seu parentesco"
+                                                       aria-label="Digite seu parentesco">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Aqui termina o formulário inicial -->
                 </div>
-                <!-- Aqui termina o formulário inicial -->
-            </div>
-            <button id="add-button" class="btn btn-primary">Adicionar</button>
-            <button id="remove-button" class="btn btn-danger">Remover</button>
-        </section>
+                <button id="add-button" class="btn btn-primary">Adicionar</button>
+                <button id="remove-button" class="btn btn-danger">Remover</button>
+            </section>
 
 
-    </fieldset>
+        </fieldset>
 
         <script>
             let c = 1; // Initialize counter
