@@ -168,14 +168,14 @@
 
             <section class="row mb-4">
                 <div class="col mb-3">
-                    <label for="nome_user" class="form-label">Nome da Mãe</label>
-                    <input type="text" class="form-control removeCaracteresNumeros" id=""
+                    <label for="filiacao_nome_mae" class="form-label">Nome da Mãe</label>
+                    <input type="text" class="form-control removeCaracteresNumeros" id="filiacao_nome_mae"
                            placeholder="Nome da mãe" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" aria-label="Digite seu nome" name="" minlength="3">
                     <span class="mensagem-erro"></span>
                 </div>
                 <div class="col">
-                    <label for="sobrenome_user" class="form-label">Nome do Pai</label>
-                    <input type="text" class="form-control removeCaracteresNumeros" id=""
+                    <label for="filiacao_nome_pai" class="form-label">Nome do Pai</label>
+                    <input type="text" class="form-control removeCaracteresNumeros" id="filiacao_nome_pai"
                            placeholder="Nome do pai" aria-label="Digite seu sobrenome completo"
                            name="" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" minlength="5">
                     <span class="mensagem-erro"></span>
@@ -185,14 +185,14 @@
 
             <section class="row mb-4">
                 <div class="col mb-3">
-                    <label for="nome_user" class="form-label">Endereço</label>
-                    <input type="text" class="form-control removeCaracteresNumeros" id=""
+                    <label for="filiacao_endereco" class="form-label">Endereço</label>
+                    <input type="text" class="form-control removeCaracteresNumeros" id="filiacao_endereco"
                            placeholder="Endereço" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" aria-label="Digite seu nome" name="" minlength="3">
                     <span class="mensagem-erro"></span>
                 </div>
                 <div class="col">
-                    <label for="sobrenome_user" class="form-label">N°</label>
-                    <input type="text" class="form-control removeCaracteresNumeros" id=""
+                    <label for="filiacao_numero_endereco" class="form-label">N°</label>
+                    <input type="text" class="form-control removeCaracteresNumeros" id="filiacao_numero_endereco"
                            placeholder="Número da Casa" aria-label="Digite seu sobrenome completo"
                            name="" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" minlength="5">
                     <span class="mensagem-erro"></span>
@@ -201,14 +201,14 @@
 
             <section class="row mb-4">
                 <div class="col mb-3">
-                    <label for="nome_user" class="form-label">Bairro</label>
-                    <input type="text" class="form-control removeCaracteresNumeros" id=""
+                    <label for="filiacao_bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control removeCaracteresNumeros" id="filiacao_bairro"
                            placeholder="Bairro" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" aria-label="Digite seu nome" name="" minlength="3">
                     <span class="mensagem-erro"></span>
                 </div>
                 <div class="col">
-                    <label for="sobrenome_user" class="form-label">Telefone</label>
-                    <input type="text" class="form-control removeCaracteresNumeros" id=""
+                    <label for="filiacao_tefone" class="form-label">Telefone</label>
+                    <input type="text" class="form-control removeCaracteresNumeros" id="filiacao_tefone"
                            placeholder="xx xxxxx-xxxx" aria-label="Digite seu sobrenome completo"
                            name="" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" minlength="5">
                     <span class="mensagem-erro"></span>
@@ -217,8 +217,8 @@
 
             <section class="row mb-4">
                 <div class="col mb-3">
-                    <label for="nome_user" class="form-label">Ponto de Referência</label>
-                    <input type="text" class="form-control removeCaracteresNumeros" id=""
+                    <label for="filiacao_ponto_referencia" class="form-label">Ponto de Referência</label>
+                    <input type="text" class="form-control removeCaracteresNumeros" id="filiacao_ponto_referencia"
                            placeholder="Digite seu ponto referência" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" aria-label="Digite seu nome" name="" minlength="3">
                     <span class="mensagem-erro"></span>
                 </div>
@@ -230,7 +230,7 @@
 
         <section class="row mb-4">
             <div class="col mb-3">
-                <label for="nome_completo_companheiro" class="form-label">Nome Completo</label>
+                <label for="companheiro_nome_completo" class="form-label">Nome Completo</label>
                 <input type="text" class="form-control removeCaracteresNumeros" id="companheiro_nome_completo"
                        placeholder="Digite o nome completo" aria-label="Digite o nome completo" name="">
                 <span class="mensagem-erro"></span>
@@ -239,8 +239,8 @@
 
         <section class="row mb-4">
             <div class="col">
-                <label for="companheiro_data_nascimento" class="form-label">Data Nascimento</label>
-                <input type="date" id="companheiro_data_nascimento" class="form-control" placeholder="Data Nascimento"
+                <label for="companheiro_data_nasc" class="form-label">Data Nascimento</label>
+                <input type="date" id="companheiro_data_nasc" class="form-control" placeholder="Data Nascimento"
                        aria-label="Digite sua data de nascimento" name="" pattern="/^\d{1,2}\/\d{1,2}\/\d{4}$/" min="0"
                        max="9999-12-31">
                 <span class="mensagem-erro"></span>
@@ -280,8 +280,8 @@
                 <span class="mensagem-erro"></span>
             </div>
             <div class="col">
-                <label for="companheiro_data_expedicao_rg" class="form-label">Data de Expedição</label>
-                <input type="date" id="companheiro_data_nascimento" class="form-control" placeholder="Data de Expedição"
+                <label for="companheiro_rg_data_expedicao" class="form-label">Data de Expedição</label>
+                <input type="date" id="companheiro_rg_data_expedicao" class="form-control" placeholder="Data de Expedição"
                        aria-label="Digite sua data de nascimento" name="" pattern="/^\d{1,2}\/\d{1,2}\/\d{4}$/" min="0"
                        max="9999-12-31">
                 <span class="mensagem-erro"></span>
@@ -290,8 +290,8 @@
 
         <section class="row mb-4">
             <div class="col mb-3">
-                <label for="companheiro_orgao_expedidor" class="form-label">Órgão Expedidor</label>
-                <input type="text" class="form-control removeCaracteresNumeros" id="companheiro_orgao_expedidor"
+                <label for="" class="form-label">Órgão Expedidor</label>
+                <input type="text" class="form-control removeCaracteresNumeros" id=""
                        placeholder="Digite seu orgão expedidor" aria-label="Digite seu nome" name="">
                 <span class="mensagem-erro"></span>
             </div>
@@ -315,7 +315,7 @@
                     <label for="cargo-funcao-user" class="hidden-md">Cargo/Função</label>
 
                     <div class="input-group mb-3 group-tabalho">
-                        <select class="form-select cargo-funcao-user" aria-label="Digite seu Estado Civil" name="trabalho_cargo_user[]">
+                        <select class="form-select cargo-funcao-user" id="cargo-funcao-user" aria-label="Digite seu Estado Civil" name="trabalho_cargo_user[]">
                             <option selected disabled>Selecione uma opção</option>
                             <option value="Empregado com Carteira Assinada">Empregado com Carteira Assinada</option>
                             <option value="Autônomo com Previdência">Autônomo com Previdência</option>
