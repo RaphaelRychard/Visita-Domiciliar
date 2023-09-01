@@ -1,0 +1,163 @@
+body {
+  background: #f6f6f6;
+}
+
+.fade-out {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 500ms ease-out, max-height 300ms ease-out;
+}
+
+.mensagem-error {
+  color: red;
+}
+
+.mensagem-error {
+  color: red;
+  display: none;
+}
+
+.mensagem-success {
+  color: green;
+  display: none;
+}
+
+.form-cadastro .mensagem-erro {
+  color: beige;
+}
+
+.form-cadastro .obrigatorio::after {
+  content: "  *";
+  color: red;
+  font-weight: bold;
+}
+
+.add-button,
+.remove-button {
+  padding: 13px 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.07);
+}
+.form .form-control, .form .form-cadastro, .form .form-select {
+  padding: 1rem;
+  background: #FFF;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.0588235294);
+  border: 2px solid #ecedee;
+  transition: border 500ms;
+}
+.form legend {
+  font-size: 2rem;
+  font-variant: all-small-caps;
+}
+.form .input-group-text {
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.0588235294);
+}
+.form .form-control,
+.form .form-cadastro,
+.form .form-select {
+  color: black;
+}
+.form .form-control:is(:hover, :focus),
+.form .form-cadastro:is(:hover, :focus),
+.form .form-select:is(:hover, :focus) {
+  border: 2px solid rgba(0, 122, 253, 0.64);
+  color: black;
+}
+.form .form-control::placeholder, .form .form-control:empty, .form .form-control::content,
+.form .form-cadastro::placeholder,
+.form .form-cadastro:empty,
+.form .form-cadastro::content,
+.form .form-select::placeholder,
+.form .form-select:empty,
+.form .form-select::content {
+  color: rgba(43, 47, 50, 0.5);
+}
+.form .form-control:valid,
+.form .form-cadastro:valid,
+.form .form-select:valid {
+  color: black;
+}
+.form .form-control.clicked:invalid,
+.form .form-cadastro.clicked:invalid,
+.form .form-select.clicked:invalid {
+  border: 2px solid #bb0f23;
+}
+.form input:disabled, .form select:disabled {
+  background: #ecedee;
+  border: 2px solid #e1e1e1;
+}
+.form input:disabled:is(:hover, :focus), .form select:disabled:is(:hover, :focus) {
+  border: 2px solid #e1e1e1;
+}
+.form .input-container {
+  position: relative;
+}
+.form .input-container span {
+  position: absolute;
+  top: 13px;
+  right: 30px;
+  display: inline-block;
+  user-select: none;
+}
+.form .form-label {
+  text-transform: capitalize !important;
+  padding-left: 10px;
+  margin-bottom: 1px;
+}
+.form .mensagem-erro {
+  color: #bb0f23;
+  font-weight: bolder;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.form .obrigatorio::after {
+  content: "  *";
+  color: red;
+  font-weight: bold;
+}
+.form hr {
+  margin-bottom: 2em;
+  border-top: 1px #2b2f32 solid;
+  opacity: 0.15;
+}
+
+@media (min-width: 1019.98px) {
+  .form {
+    background: #f6f6f6;
+    padding: 4rem;
+  }
+  body {
+    background: #e1e1e1;
+  }
+}
+@media (max-width: 675.98px) {
+  .form .row {
+    display: flex;
+    flex-direction: column;
+  }
+  body {
+    padding: 1em;
+  }
+}
+canvas {
+  max-width: 100%;
+  width: auto;
+  height: 200px;
+}
+
+.error-message {
+  display: block;
+  color: red;
+}
+
+.success-message {
+  display: block;
+  color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

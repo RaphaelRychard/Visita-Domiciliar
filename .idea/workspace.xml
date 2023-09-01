@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="68e03fac-1059-4a88-b8f0-6c91f953b238" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/teste.html" beforeDir="false" afterPath="$PROJECT_DIR$/style/teste.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="D:\xampp\php\php.exe" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2UAewMIrCIyj6xMvlRAqpDdTFug" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -40,6 +45,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -54,6 +60,17 @@
       <workItem from="1692387053151" duration="4175000" />
       <workItem from="1692392284158" duration="15000" />
       <workItem from="1692618109597" duration="31000" />
+      <workItem from="1692621570296" duration="611000" />
+      <workItem from="1692623827706" duration="605000" />
+      <workItem from="1692631545092" duration="594000" />
+      <workItem from="1692647321997" duration="25000" />
+      <workItem from="1692704377987" duration="29000" />
+      <workItem from="1692704430025" duration="9000" />
+      <workItem from="1692706828052" duration="11000" />
+      <workItem from="1692810657367" duration="13000" />
+      <workItem from="1692968954170" duration="675000" />
+      <workItem from="1693247142883" duration="1268000" />
+      <workItem from="1693307087451" duration="32000" />
     </task>
     <servers />
   </component>

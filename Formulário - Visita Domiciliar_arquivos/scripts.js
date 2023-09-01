@@ -1,0 +1,105 @@
+import ehUmCPF from "./valida-cpf.js";
+
+
+const camposDoFormulario = document.querySelectorAll('[required]')
+const camposDoFormulario2 = document.querySelectorAll('input')
+const formulario = document.querySelector('input[type="date"]');
+
+
+camposDoFormulario.forEach((campo) => {
+    campo.addEventListener("blur", () => verificaCampo(campo));
+    campo.addEventListener("invalid", evento => evento.preventDefault())
+})
+
+camposDoFormulario2.forEach((campo) => {
+    campo.addEventListener("blur", () => verificaCampo(campo));
+    campo.addEventListener("invalid", evento => evento.preventDefault())
+})
+
+const tiposDeErro = [
+    'valueMissing',
+    'typeMismatch',
+    'patternMismatch',
+    'tooShort',
+    'customError'
+]
+
+const mensagens = {
+    nome_user: {
+        valueMissing: "O campo de nome não pode estar vazio.",
+        patternMismatch: "Por favor, preencha um nome válido.",
+        customError: 'O nome deve ter mais de  5 caracteres',
+        tooShort: "Por favor, preencha um nome válido."
+    },
+    cpf_user: {
+        valueMissing: 'O campo de CPF não pode estar vazio.',
+        patternMismatch: "Por favor, preencha um CPF válido.",
+        customError: "O CPF digitado não existe.",
+        tooShort: "O campo de CPF não tem caractéres suficientes."
+    },
+    data_nascimento_user: {
+        valueMissing: 'O campo de data de nascimento não pode estar vazio.',
+        customError: 'Você deve ser maior que 18 anos para se cadastrar.'
+    },
+}
+
+
+// CPF
+const myInput = document.getElementById('cpf_user');
+
+myInput.addEventListener('focus', function () {
+    this.classList.add('clicked');
+});
+
+function verificaCampo(campo) {
+    let mensagem = "";
+    campo.setCustomValidity('');
+
+    if (campo.name === "nome_user" && (campo.value.length >= 1 && campo.value.length <= 5)) {
+        campo.setCustomValidity('O nome deve ter mais de 5 caracteres')
+    }
+
+    if (campo.name === "cpf_user" && campo.value.length >= 11) {
+        ehUmCPF(campo);
+    }
+
+    tiposDeErro.forEach(erro => {
+        if (campo.validity[erro]) {
+            mensagem = mensagens[campo.name][erro];
+            console.log(mensagem);
+        }
+    })
+    const mensagemErro = campo.parentNode.querySelector('.mensagem-erro');
+    const validadorDeInput = campo.checkValidity();
+
+    if (!validadorDeInput) {
+        mensagemErro.textContent = mensagem;
+    } else {
+        mensagemErro.textContent = "";
+    }
+
+    document.querySelectorAll(".removeCaracteresNumeros").forEach(function (campo) {
+        campo.addEventListener("input", function (event) {
+            let valor = campo.value;
+
+            // Remove caracteres que não sejam letras
+            valor = valor.replace(/[^a-zA-ZÀ-ÖØ-öø-ÿ\s]+/g, '');
+
+            // Atualiza o valor do campo com o novo valor
+            campo.value = valor;
+        });
+    });
+
+    document.querySelectorAll(".removeCaracteresNaoLetras").forEach(function (campo) {
+        campo.addEventListener("input", function (event) {
+            let valor = campo.value;
+
+            // Remove caracteres que não sejam números
+            valor = valor.replace(/[^0-9]+/g, '');
+
+            // Atualiza o valor do campo com o novo valor
+            campo.value = valor;
+        });
+    });
+
+}
