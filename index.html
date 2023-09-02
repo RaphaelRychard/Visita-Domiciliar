@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
+<!-- saved from url=(0022)http://127.0.0.1:8080/ -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Formulário - Visita Domiciliar</title>
 
     <!-- ajuste -->
-    <link rel="stylesheet" href="Formul%C3%A1rio%20-%20Visita%20Domiciliar_arquivos/all.min.css">
-    <link rel="stylesheet" href="Formul%C3%A1rio%20-%20Visita%20Domiciliar_arquivos/bootstrap.css">
-    <link rel="stylesheet" href="Formul%C3%A1rio%20-%20Visita%20Domiciliar_arquivos/login.css">
-    <link rel="stylesheet" href="Formul%C3%A1rio%20-%20Visita%20Domiciliar_arquivos/style.css">
-<meta id="webpki_beta_lacunasoftware_com"><meta id="webpki_lacunasoftware_com"></head>
+    <link rel="stylesheet" href="./Formulário - Visita Domiciliar_files/all.min.css">
+    <link rel="stylesheet" href="./Formulário - Visita Domiciliar_files/bootstrap.css">
+    <link rel="stylesheet" href="./Formulário - Visita Domiciliar_files/login.css">
+    <link rel="stylesheet" href="./Formulário - Visita Domiciliar_files/style.css">
+</head>
 
-<body>
+<body cz-shortcut-listen="true">
 <main class="container-fluid container-md">
     <form class="form" method="POST" enctype="multipart/form-data">
         <fieldset class="mb-5">
@@ -40,7 +40,7 @@
         </div>
         <div class="col">
             <label for="idade_user" class="form-label">Idade</label>
-            <input type="text" id="idade_user" class=" form-control" disabled="disabled" placeholder="Sua idade" aria-label="Exibe a sua idade" name="idade_user">
+            <input type="text" id="idade_user" class=" form-control" disabled="" placeholder="Sua idade" aria-label="Exibe a sua idade" name="idade_user">
              <span class="mensagem-erro"></span>
         </div>
     </section>
@@ -51,7 +51,7 @@
             <div class="input-container">
                 <span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"></path></svg></span>
                 <select required="" class="form-select" id="estado_civil_user" aria-label="Digite seu Estado Civil" name="naturalidade_user">
-                    <option disabled="disabled" selected="selected">Selecione uma opção</option>
+                    <option disabled="" selected="">Selecione uma opção</option>
                     <option value="Não Informado(a)">Não Informado(a)</option>
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
@@ -89,13 +89,14 @@
             <div class="input-container">
                 <span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"></path></svg></span>
                 <select class="form-select" id="estado_civil_user" aria-label="Digite seu Estado Civil" name="estado_civil_user">
-                    <option disabled="disabled" selected="selected">Selecione uma opção</option>
+                    <option disabled="" selected="">Selecione uma opção</option>
                     <option value="Não Informado(a)">Não Informado(a)</option>
                     <option value="Solteiro">Solteiro</option>
                     <option value="casado">casado</option>
                     <option value="separado">separado</option>
                     <option value="Divorciado">Divorciado</option>
                     <option value="Viúvo">Viúvo</option>
+                    <option value="Viúvo">União Estável</option>
                 </select>
             </div>
              <span class="mensagem-erro"></span>
@@ -131,18 +132,19 @@
     <section class="row ">
         <div class="col">
             <label for="nis_user" class="form-label">NIS</label>
-            <input type="text" id="nis_user" class="form-control removeCaracteresNaoNumeros" placeholder="Identificação Social (NIS)" aria-label="Digite o Número de Identificação Social (NIS)" name="nis_user">
+            <input type="text" id="nis_user" class="form-control removeCaracteresNaoLetras" placeholder="Identificação Social (NIS)" aria-label="Digite o Número de Identificação Social (NIS)" name="nis_user">
              <span class="mensagem-erro"></span>
         </div>
         <div class="col">
             <label for="cns_user" class="form-label">CNS</label>
-            <input type="text" id="cns_user" class="form-control removeCaracteresNaoNumeros" placeholder="Cartão Nacional de Saúde (CNS)" aria-label="Digite o número do Cartão Nacional de Saúde (CNS)" name="cns_user">
+            <input type="text" id="cns_user" class="form-control removeCaracteresNaoLetras" placeholder="Cartão Nacional de Saúde (CNS)" aria-label="Digite o número do Cartão Nacional de Saúde (CNS)" name="cns_user">
              <span class="mensagem-erro"></span>
         </div>
     </section>
 
 </fieldset>
 
+<!--data nascimeto user-->
 <script>
     function calculateAge() {
         let birthdate = new Date(document.querySelector('#data_nascimento_user').value);
@@ -168,14 +170,15 @@
         <div class="input-container">
             <span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"></path></svg></span>
             <select class="form-select" id="escolaridade_user" aria-label="Digite seu Estado Civil" name="escolaridade_user">
-                <option selected="selected" disabled="disabled">Selecione uma opção</option>
-                <option value="Educação infantil">Educação infantil</option>
-                <option value="Fundamental">Fundamental</option>
-                <option value="Médio">Médio</option>
-                <option value="Superior (Graduação)">Superior (Graduação)</option>
-                <option value="Pós-graduação">Pós-graduação</option>
-                <option value="Mestrado">Mestrado</option>
-                <option value="Doutorado">Doutorado</option>
+
+                <option value="Ensino Fundamental incompleto">Ensino Fundamental incompleto</option>
+                <option value="Ensino Fundamental completo">Ensino Fundamental completo</option>
+                <option value="Ensino Médio incompleto">Ensino Médio incompleto</option>
+                <option value="Ensino Médio completo">Ensino Médio completo</option>
+                <option value="Ensino Superior (graduação) incompleto">Ensino Superior (graduação) incompleto</option>
+                <option value="Ensino Superior (graduação) completo">Ensino Superior (graduação) completo</option>
+                <option value="Pós-Graduação (especialização, mestrado, doutorado) incompleto">Pós-Graduação (especialização, mestrado, doutorado) incompleto</option>
+                <option value="Pós-graduação (especialização, mestrado, doutorado) completo">Pós-graduação (especialização, mestrado, doutorado) completo</option>
             </select>
             <span class="mensagem-erro"></span>
         </div>
@@ -254,7 +257,7 @@
         </div>
         <div class="col">
             <label for="companheiro_idade" class="form-label">Idade</label>
-            <input type="text" id="companheiro_idade" disabled="disabled" class=" form-control" placeholder="Sua idade" aria-label="Exibe a sua idade" name="companheiro_idade">
+            <input type="text" id="companheiro_idade" disabled="" class=" form-control" placeholder="Sua idade" aria-label="Exibe a sua idade" name="companheiro_idade">
         </div>
     </section>
 
@@ -268,7 +271,7 @@
             <label for="companheiro_renda" class="hidden-md">Renda</label>
             <div class="input-group mt-2">
                 <span class="input-group-text">R$</span>
-                <input type="text" id="companheiro_renda" class="form-control" onkeyup="formatarMoeda('companheiro_renda')" placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="companheiro_renda">
+                <input type="text" id="companheiro_renda" class="form-control" onkeyup="formatarMoeda(&#39;companheiro_renda&#39;)" placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="companheiro_renda">
             </div>
         </div>
     </section>
@@ -334,7 +337,7 @@
                         <span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"></path></svg></span>
 
                         <select class="form-select cargo-funcao-user" aria-label="Digite seu Estado Civil" name="trabalho_cargo_user[]">
-                            <option selected="selected" disabled="disabled">Selecione uma opção</option>
+                            <option selected="" disabled="">Selecione uma opção</option>
                             <option value="Empregado com Carteira Assinada">Empregado com Carteira Assinada</option>
                             <option value="Autônomo com Previdência">Autônomo com Previdência</option>
                             <option value="Desempregado">Desempregado</option>
@@ -349,7 +352,7 @@
                     </div>
 
                     <span class="input-group-text">R$</span>
-                    <input type="text" class="form-control preco salario_user" placeholder="" aria-label="Server" name="salario_user[]" id="salario_user" onkeyup="formatarMoeda('salario_user')" min="0">
+                    <input type="text" class="form-control preco salario_user" placeholder="" aria-label="Server" name="salario_user[]" id="salario_user" onkeyup="formatarMoeda(&#39;salario_user&#39;)" min="0">
                 </div>
 
                 <span class="mensagem-erro"></span>
@@ -402,7 +405,7 @@
             <label for="renda_individual_user" class="hidden-md">Renda Individual</label>
             <div class="input-group mb-3">
                 <span class="input-group-text">R$</span>
-                <input type="text" id="renda_individual_user" class="form-control" onkeyup="formatarMoeda('renda_individual_user')" aria-label="Dollar amount (with dot and two decimal places)" name="rendaIndividual">
+                <input type="text" id="renda_individual_user" class="form-control" onkeyup="formatarMoeda(&#39;renda_individual_user&#39;)" aria-label="Dollar amount (with dot and two decimal places)" name="rendaIndividual">
             </div>
         </div>
 
@@ -410,7 +413,7 @@
             <label for="renda_familiar_user" class="hidden-md">Renda Familiar</label>
             <div class="input-group">
                 <span class="input-group-text">R$</span>
-                <input type="text" id="renda_familiar_user" class="form-control" onkeyup="formatarMoeda('renda_familiar_user')" placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="rendaFamilia">
+                <input type="text" id="renda_familiar_user" class="form-control" onkeyup="formatarMoeda(&#39;renda_familiar_user&#39;)" placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="rendaFamilia">
             </div>
         </div>
     </section>
@@ -420,7 +423,7 @@
             <label for="alimentacao_user" class="hidden-md">Alimentação</label>
             <div class="input-group mb-3">
                 <span class="input-group-text">R$</span>
-                <input type="text" id="alimentacao_user" class="form-control" onkeyup="formatarMoeda('alimentacao_user')" aria-label="Dollar amount (with dot and two decimal places)" name="alimentacao">
+                <input type="text" id="alimentacao_user" class="form-control" onkeyup="formatarMoeda(&#39;alimentacao_user&#39;)" aria-label="Dollar amount (with dot and two decimal places)" name="alimentacao">
             </div>
         </div>
 
@@ -428,7 +431,7 @@
             <label for="agua_user" class="hidden-md">Água</label>
             <div class="input-group">
                 <span class="input-group-text" id="basic-user">R$</span>
-                <input type="text" id="agua_user" class="form-control" onkeyup="formatarMoeda('agua_user')" placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="gastoAgua">
+                <input type="text" id="agua_user" class="form-control" onkeyup="formatarMoeda(&#39;agua_user&#39;)" placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="gastoAgua">
             </div>
         </div>
     </section>
@@ -438,7 +441,7 @@
             <label for="energia-eletrica-user" class="hidden-md">Energia Elétrica</label>
             <div class="input-group mb-3">
                 <span class="input-group-text">R$</span>
-                <input type="text" id="energia-eletrica-user" class="form-control" onkeyup="formatarMoeda('energia-eletrica-user')" aria-label="Dollar amount (with dot and two decimal places)" name="gastoEnergiaEletrica">
+                <input type="text" id="energia-eletrica-user" class="form-control" onkeyup="formatarMoeda(&#39;energia-eletrica-user&#39;)" aria-label="Dollar amount (with dot and two decimal places)" name="gastoEnergiaEletrica">
             </div>
         </div>
 
@@ -446,7 +449,7 @@
             <label for="gas-user" class="hidden-md">Gás</label>
             <div class="input-group">
                 <span class="input-group-text" id="basic-addon1">R$</span>
-                <input type="text" id="gas-user" class="form-control" onkeyup="formatarMoeda('gas-user')" placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="gastoGas">
+                <input type="text" id="gas-user" class="form-control" onkeyup="formatarMoeda(&#39;gas-user&#39;)" placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="gastoGas">
             </div>
         </div>
     </section>
@@ -456,7 +459,7 @@
             <label for="meicamento-regular_familia" class="hidden-md">Medicamentos de uso regular</label>
             <div class="input-group mb-3">
                 <span class="input-group-text">R$</span>
-                <input type="text" id="meicamento-regular_familia" class="form-control" onkeyup="formatarMoeda('meicamento-regular_familia')" aria-label="Dollar amount (with dot and two decimal places)" name="gastoMedicamento">
+                <input type="text" id="meicamento-regular_familia" class="form-control" onkeyup="formatarMoeda(&#39;meicamento-regular_familia&#39;)" aria-label="Dollar amount (with dot and two decimal places)" name="gastoMedicamento">
             </div>
         </div>
 
@@ -464,7 +467,7 @@
             <label for="transport-user" class="hidden-md">Transporte</label>
             <div class="input-group">
                 <span class="input-group-text">R$</span>
-                <input type="text" id="transport-user" class="form-control" onkeyup="formatarMoeda('transport-user')" placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="gastoTransporte">
+                <input type="text" id="transport-user" class="form-control" onkeyup="formatarMoeda(&#39;transport-user&#39;)" placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="gastoTransporte">
             </div>
             <span class="mensagem-erro"></span>
         </div>
@@ -476,7 +479,7 @@
             <label for="outras_despesas_user" class="hidden-md">Outras despesas</label>
             <div class="input-group mb-3">
                 <span class="input-group-text">R$</span>
-                <input type="text" class="form-control" id="outras_despesas_user" onkeyup="formatarMoeda('outras_despesas_user')" aria-label="Dollar amount (with dot and two decimal places)" name="gastroOutrasDespesa">
+                <input type="text" class="form-control" id="outras_despesas_user" onkeyup="formatarMoeda(&#39;outras_despesas_user&#39;)" aria-label="Dollar amount (with dot and two decimal places)" name="gastroOutrasDespesa">
             </div>
         </div>
 
@@ -506,31 +509,31 @@
     <section class="mb-4" id="beneficios_div">
         <label for="nome_user" class="form-label">Quais benefícios?</label>
         <div class="form-check" style="margin-left: 12px">
-            <input class="form-check-input" type="checkbox" value="PETI" id="quais_beneficios_familia_peti" name="beneficios[]" disabled="disabled">
+            <input class="form-check-input" type="checkbox" value="PETI" id="quais_beneficios_familia_peti" name="beneficios[]" disabled="">
             <label class="form-check-label" for="quais_beneficios_familia_peti">
                 PETI
             </label>
         </div>
         <div class="form-check" style="margin-left: 12px">
-            <input class="form-check-input" type="checkbox" value="Bolsa Famìlia" id="quais_beneficios_familia_bolsa_familia" disabled="disabled" name="beneficios[]">
+            <input class="form-check-input" type="checkbox" value="Bolsa Famìlia" id="quais_beneficios_familia_bolsa_familia" disabled="" name="beneficios[]">
             <label class="form-check-label" for="quais_beneficios_familia_bolsa_familia">
                 BOLSA FAMÌLIA
             </label>
         </div>
         <div class="form-check" style="margin-left: 12px">
-            <input class="form-check-input" type="checkbox" value="BPC" id="quais_beneficios_familia_bpc" disabled="disabled" name="beneficios[]">
+            <input class="form-check-input" type="checkbox" value="BPC" id="quais_beneficios_familia_bpc" disabled="" name="beneficios[]">
             <label class="form-check-label" for="quais_beneficios_familia_bpc">
                 BPC
             </label>
         </div>
         <div class="input-group mb-3">
             <div class="input-group-text">
-                <input class="form-check-input mt-0" type="checkbox" value="Outros" aria-label="Checkbox for following text input" name="beneficios[]" disabled="disabled" id="outros-checkbox">
+                <input class="form-check-input mt-0" type="checkbox" value="Outros" aria-label="Checkbox for following text input" name="beneficios[]" disabled="" id="outros-checkbox">
                 <label class="form-check-label" style="margin-left: 10px">
                     Outros
                 </label>
             </div>
-            <input type="text" class="form-control" aria-label="Text input with checkbox" name="quais_beneficios_descricao" id="outros-descricao" disabled="disabled">
+            <input type="text" class="form-control" aria-label="Text input with checkbox" name="quais_beneficios_descricao" id="outros-descricao" disabled="">
         </div>
     </section>
 
@@ -662,7 +665,7 @@
                     Sim, quantas?
                 </label>
             </div>
-            <input type="number" class="form-control disableCampoDesc" pattern="\d+" name="gestantes_familia_quantidade" aria-label="Text input with checkbox" placeholder="Quantas Gestantes Possuem?" disabled="disabled">
+            <input type="number" class="form-control disableCampoDesc" pattern="\d+" name="gestantes_familia_quantidade" aria-label="Text input with checkbox" placeholder="Quantas Gestantes Possuem?" disabled="">
         </div>
         <div class="form-check" style="margin-left: 12px;">
             <input class="form-check-input" type="radio" name="gestantes_familia" id="familiar_destantes_nao" value="Não">
@@ -687,7 +690,7 @@
                         Sim, quantas
                     </label>
                 </div>
-                <input type="number" class="form-control disableCampoDesc" pattern="/^\d+$/" aria-label="Text input with checkbox" placeholder="Quantas Gestantes Possuem" min="0" max="100" name="pessoa_deficiencia_quantidade" disabled="disabled">
+                <input type="number" class="form-control disableCampoDesc" pattern="/^\d+$/" aria-label="Text input with checkbox" placeholder="Quantas Gestantes Possuem" min="0" max="100" name="pessoa_deficiencia_quantidade" disabled="">
 
             </div>
 
@@ -716,8 +719,8 @@
                     Sim, quantas
                 </label>
             </div>
-            <select class="form-select disableCampoDesc" aria-label="Caixa de Seleção de Tipos de Deficiencia" name="tipo_deficiencia_select" id="tipo_deficiencia_select" disabled="disabled">
-                <option disabled="disabled" selected="selected">Tipo de deficiência</option>
+            <select class="form-select disableCampoDesc" aria-label="Caixa de Seleção de Tipos de Deficiencia" name="tipo_deficiencia_select" id="tipo_deficiencia_select" disabled="">
+                <option disabled="" selected="">Tipo de deficiência</option>
                 <option value="Física">Física</option>
                 <option value="Mental">Mental</option>
                 <option value="Intelectual">Intelectual</option>
@@ -747,7 +750,7 @@
                     Sim, quantas
                 </label>
             </div>
-            <input type="number" class="form-control" aria-label="Text input with checkbox" placeholder="Digite sua idade" min="0" max="100" pattern="\d+" name="pessoa_idosa_quantidade" disabled="disabled">
+            <input type="number" class="form-control" aria-label="Text input with checkbox" placeholder="Digite sua idade" min="0" max="100" pattern="\d+" name="pessoa_idosa_quantidade" disabled="">
         </div>
 
         <div class="form-check" style="margin-left: 12px;">
@@ -773,7 +776,7 @@
                     Sim, quantas
                 </label>
             </div>
-            <input type="number" class="form-control" aria-label="Text input with checkbox" placeholder="Digite sua idade" name="pessoa_tem_documentacao_quantidade" pattern="\d+" disabled="disabled" min="0" max="100">
+            <input type="number" class="form-control" aria-label="Text input with checkbox" placeholder="Digite sua idade" name="pessoa_tem_documentacao_quantidade" pattern="\d+" disabled="" min="0" max="100">
         </div>
 
         <div class="form-check" style="margin-left: 12px;">
@@ -795,7 +798,7 @@
                 <div class="input-container">
                     <span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"></path></svg></span>
                     <select class="form-select" aria-label="Default select example" name="situacao_imovel">
-                        <option disabled="disabled" selected="selected">Tipo de deficiência</option>
+                        <option disabled="" selected="">Tipo de deficiência</option>
                         <option value="Próprio">Próprio</option>
                         <option value="Cedido">Cedido</option>
                         <option value="Alugado">Alugado</option>
@@ -988,83 +991,93 @@
 
 </fieldset><fieldset class="mb-5">
     <legend>Composição familiar dos moradores do domicílio</legend>
-    <hr>
 
-    <section class="container">
+    <section class=" px-0">
         <div id="form-container">
+
             <!-- Aqui começa o formulário inicial -->
-            <div class="row moradores-domicilio" style="align-items: center;">
-                <div class="moradores-domicilio mt-3" id="moradores-domicilio">
+            <div class="moradores-domicilio">
+                <div id="form-container mt-3 mb-3">
+                    <!-- Aqui começa o formulário inicial -->
                     <div class="row moradores-domicilio" style="align-items: center;">
-                        <div class="row moradores-domicilio" style="align-items: center;">
-                            <div class="moradores-domicilio mt-3">
-                                <div class="row">
-                                    <div class="col mb-3">
-                                        <label for="nome_completo" class="form-label">Nome Completo:</label>
-                                        <input type="text" class="form-control" id="nome_completo" placeholder="Seu nome completo" name="nome_completo_familia_moradores_domicilio[]" aria-label="Digite seu nome completo">
+                        <div class="moradores-domicilio mt-3 mb-3" id="moradores-domicilio">
+                            <hr>
+                            <div class="row">
+                                <div class="col  ">
+                                    <label for="nome_completo" class="form-label">Nome Completo:</label>
+                                    <input type="text" class="form-control" id="nome_completo" placeholder="Seu nome completo" name="nome_completo_familia_moradores_domicilio[]" aria-label="Digite seu nome completo">
+                                    <span class="mensagem-erro"></span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col  ">
+                                    <label for="data_nascimento" class="form-label">Data de
+                                        nascimento:</label>
+                                    <input type="date" class="form-control" id="data_nascimento" placeholder="Data de nascimento" name="data_nascimento_familia_moradores_domicilio[]" aria-label="Digite sua data de nascimento">
+                                    <span class="mensagem-erro"></span>
+                                </div>
+                                <div class="col  ">
+                                    <label for="idade" class="form-label">Idade</label>
+                                    <input type="number" min="0" class="form-control" id="idade" placeholder="Sua idade" disabled="" name="idade_familia_moradores_domicilio[]" aria-label="Digite sua idade">
+                                    <span class="mensagem-erro"></span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col  ">
+                                    <label for="rg" class="form-label">RG:</label>
+                                    <input type="text" class="form-control" id="rg" placeholder="Seu RG" name="rg_familia_moradores_domicilio[]" aria-label="Digite seu RG">
+                                    <span class="mensagem-erro"></span>
+                                </div>
+                                <div class="col  ">
+                                    <label for="data_expedicao" class="form-label">Data de Expedição:</label>
+                                    <input type="date" class="form-control" id="data_expedicao" placeholder="Data de Expedição do RG" name="data_expedicao_rg_familia_moradores_domicilio[]" aria-label="Digite a data de expedição do RG">
+                                    <span class="mensagem-erro"></span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col  ">
+                                    <label for="orgao_expedidor" class="form-label">Órgão Expedidor:</label>
+                                    <input type="text" class="form-control" id="orgao_expedidor" placeholder="Órgão expedidor do RG" name="orgao_expedidor_rg_familia_moradores_domicilio[]" aria-label="Digite o órgão expedidor do RG">
+                                    <span class="mensagem-erro"></span>
+                                </div>
+                                <div class="col  ">
+                                    <label for="algum_familiar_cpf" class="form-label obrigatorio">CPF (apenas números)</label>
+                                    <input type="text" id="algum_familiar_cpf" class="form-control" name="cpf_familia_moradores_domicilio[]" onkeyup="ValidaCPFCompanheiro2()" minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" autocomplete="none">
+                                    <span class="mensagem-erro"></span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col  ">
+                                    <label for="cns" class="form-label">CNS:</label>
+                                    <input type="text" class="form-control" id="cns" placeholder="Seu CNS" name="cns_familia_moradores_domicilio[]" aria-label="Digite seu Cartão Nacional de Saúde (CNS)">
+                                    <span class="mensagem-erro"></span>
+                                </div>
+                                <div class="col  ">
+                                    <label for="ocupacao" class="form-label">Ocupação:</label>
+                                    <input type="text" class="form-control" id="ocupacao" placeholder="Sua ocupação" name="ocupacao_familia_moradores_domicilio[]" aria-label="Digite sua ocupação">
+                                    <span class="mensagem-erro"></span>
+                                </div>
+                            </div>
+
+                            <div class="row salario_user">
+
+                                <div class="col  ">
+                                    <label for="renda_familia_moradores_domicilio" class="hidden-md">Renda:</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="text" id="renda_familia_moradores_domicilio" class="form-control" onkeyup="formatarMoeda(&#39;renda_familia_moradores_domicilio&#39;)" aria-label="Dollar amount (with dot and two decimal places)" name="renda_familia_moradores_domicilio[]">
                                     </div>
+                                    <span class="mensagem-erro"></span>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col mb-3">
-                                        <label for="data_nascimento" class="form-label">Data de
-                                            nascimento:</label>
-                                        <input type="date" class="form-control" id="data_nascimento" placeholder="Data de nascimento" name="data_nascimento_familia_moradores_domicilio[]" aria-label="Digite sua data de nascimento">
-                                    </div>
-                                    <div class="col">
-                                        <label for="idade" class="form-label">Idade</label>
-                                        <input type="number" min="0" class="form-control" id="idade" placeholder="Sua idade" disabled="disabled" name="idade_familia_moradores_domicilio[]" aria-label="Digite sua idade">
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col mb-3">
-                                        <label for="rg" class="form-label">RG:</label>
-                                        <input type="text" class="form-control" id="rg" placeholder="Seu RG" name="rg_familia_moradores_domicilio[]" aria-label="Digite seu RG">
-                                    </div>
-                                    <div class="col">
-                                        <label for="data_expedicao" class="form-label">Data de Expedição:</label>
-                                        <input type="date" class="form-control" id="data_expedicao" placeholder="Data de Expedição do RG" name="data_expedicao_rg_familia_moradores_domicilio[]" aria-label="Digite a data de expedição do RG">
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col mb-3">
-                                        <label for="orgao_expedidor" class="form-label">Órgão Expedidor:</label>
-                                        <input type="text" class="form-control" id="orgao_expedidor" placeholder="Órgão expedidor do RG" name="orgao_expedidor_rg_familia_moradores_domicilio[]" aria-label="Digite o órgão expedidor do RG">
-                                    </div>
-                                    <div class="col">
-                                        <label for="algum_familiar_cpf" class="form-label obrigatorio">CPF (apenas números)</label>
-                                        <input type="text" id="algum_familiar_cpf" class="form-control" name="cpf_familia_moradores_domicilio[]" onkeyup="ValidaCPFCompanheiro2()" minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" autocomplete="none">
-                                        <span class="mensagem-erro"></span>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col mb-3">
-                                        <label for="cns" class="form-label">CNS:</label>
-                                        <input type="text" class="form-control" id="cns" placeholder="Seu CNS" name="cns_familia_moradores_domicilio[]" aria-label="Digite seu Cartão Nacional de Saúde (CNS)">
-                                    </div>
-                                    <div class="col">
-                                        <label for="ocupacao" class="form-label">Ocupação:</label>
-                                        <input type="text" class="form-control" id="ocupacao" placeholder="Sua ocupação" name="ocupacao_familia_moradores_domicilio[]" aria-label="Digite sua ocupação">
-                                    </div>
-                                </div>
-
-                                <div class="row">
-
-                                    <div class="col">
-                                        <label for="renda_familia_moradores_domicilio" class="hidden-md">Renda:</label>
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text">R$</span>
-                                            <input type="text" id="renda_familia_moradores_domicilio" class="form-control" onkeyup="formatarMoeda('renda_familia_moradores_domicilio')" aria-label="Dollar amount (with dot and two decimal places)" name="renda_familia_moradores_domicilio[]">
-                                        </div>
-                                    </div>
-
-                                    <div class="col">
-                                        <label for="parentesco" class="form-label">Parentesco:</label>
-                                        <input type="text" class="form-control" id="parentesco" placeholder="Seu parentesco" name="parentesco_familia_moradores_domicilio[]" aria-label="Digite seu parentesco">
-                                    </div>
+                                <div class="col  ">
+                                    <label for="parentesco" class="form-label ">Parentesco:</label>
+                                    <input type="text" class="form-control" id="parentesco" placeholder="Seu parentesco" name="parentesco_familia_moradores_domicilio[]" aria-label="Digite seu parentesco">
+                                    <span class="mensagem-erro"></span>
                                 </div>
                             </div>
                         </div>
@@ -1073,8 +1086,10 @@
             </div>
             <!-- Aqui termina o formulário inicial -->
         </div>
+
         <button id="add-button" class="btn btn-primary add-button" type="button">Adicionar</button>
         <button id="remove-button" class="btn btn-danger remove-button" type="button">Remover</button>
+        
     </section>
 </fieldset>
 
@@ -1125,25 +1140,39 @@
 
 
 
-<div class="row m-4">
+<div>
     <h1 class="text-center">Capturar Assinatura</h1>
     <p class="text-center">Por favor assine abaixo:</p>
 
-    <div class="text-end mb-3 mx-2">
-        <button id="save-button" class="btn btn-primary m-3" type="button">Salvar Assinatura</button>
+    <div class="d-flex align-items-center justify-content-between m-3">
+        <button id="save-button" class="btn btn-primary" type="button">Salvar Assinatura</button>
         <button id="clear-button" class="btn btn-secondary" type="button">Limpar Campo</button>
     </div>
 
-    <canvas class="coll border bg-white" id="signature-pad" height="200" width="760"></canvas>
+    <div class="signature-wrapper">
+        <canvas class="coll border bg-white" id="signature-pad" height="200" width="1168"></canvas>
+    </div>
+
 
     <span id="message-span" class="mesagem-erro"></span>
 
     <!-- Adicione um elemento de imagem para exibir a assinatura -->
     <p class="text-center mt-3" id="preview-ass" style="display: none;">Preview da Assinatura:</p>
-    <img id="signature-image" height="200" class="img-fluid" style="display: none;" alt="assiantura-visualização" src="">
+    <img id="signature-image" height="200" class="img-fluid" style="display: none;" alt="assiantura-visualização" src="http://127.0.0.1:8080/">
 </div>
 
 <script type="text/javascript">
+
+    // Obtém o elemento do wrapper da assinatura
+    let signatureWrapper = document.querySelector('.signature-wrapper');
+
+    // Adiciona o evento de manipulação de toque para prevenir o movimento
+    signatureWrapper.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+    }, { passive: false });
+
+
+
     let canvas = document.getElementById('signature-pad');
     let ctx = canvas.getContext('2d');
     let drawing = false; // Variável para indicar se está ocorrendo um desenho
@@ -1348,18 +1377,18 @@
 
         <!-- Campo oculto para armazenar a imagem de assinatura -->
         <input type="hidden" name="assinatura_data_url" id="assinatura_data_url_input">
-        <input disabled="disabled" id="enviar-button" class="btn btn-primary" type="submit" value="enviar" name="cadastrar">
+        <input disabled="" id="enviar-button" class="btn btn-primary" type="submit" value="enviar" name="cadastrar">
     </form>
 </main>
 
 
-<script src="Formul%C3%A1rio%20-%20Visita%20Domiciliar_arquivos/valor-monetario.js"></script>
-<script src="Formul%C3%A1rio%20-%20Visita%20Domiciliar_arquivos/ValidaCPF.js"></script>
-<script src="Formul%C3%A1rio%20-%20Visita%20Domiciliar_arquivos/calculo-idade.js"></script>
-<script src="Formul%C3%A1rio%20-%20Visita%20Domiciliar_arquivos/ativa-desativa-campos-familia.js"></script>
-<script src="Formul%C3%A1rio%20-%20Visita%20Domiciliar_arquivos/ativa-desativa-grupo-familia.js"></script>
-<script src="Formul%C3%A1rio%20-%20Visita%20Domiciliar_arquivos/scripts.js" type="module"></script>
-<script src="Formul%C3%A1rio%20-%20Visita%20Domiciliar_arquivos/tudo.js"></script>
+<script src="./Formulário - Visita Domiciliar_files/valor-monetario.js.download"></script>
+<script src="./Formulário - Visita Domiciliar_files/ValidaCPF.js.download"></script>
+<script src="./Formulário - Visita Domiciliar_files/calculo-idade.js.download"></script>
+<script src="./Formulário - Visita Domiciliar_files/ativa-desativa-campos-familia.js.download"></script>
+<script src="./Formulário - Visita Domiciliar_files/ativa-desativa-grupo-familia.js.download"></script>
+<script src="./Formulário - Visita Domiciliar_files/scripts.js.download" type="module"></script>
+<script src="./Formulário - Visita Domiciliar_files/tudo.js.download"></script>
 
 
 

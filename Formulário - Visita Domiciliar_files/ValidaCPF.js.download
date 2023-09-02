@@ -55,7 +55,6 @@ function ValidaCPFCompanheiro() {
     });
 }
 
-
 function ValidaCPFCompanheiro2() {
 
     const cpfInput = document.querySelector('#algum_familiar_cpf');

@@ -78,28 +78,5 @@ function verificaCampo(campo) {
         mensagemErro.textContent = "";
     }
 
-    document.querySelectorAll(".removeCaracteresNumeros").forEach(function (campo) {
-        campo.addEventListener("input", function (event) {
-            let valor = campo.value;
-
-            // Remove caracteres que não sejam letras
-            valor = valor.replace(/[^a-zA-ZÀ-ÖØ-öø-ÿ\s]+/g, '');
-
-            // Atualiza o valor do campo com o novo valor
-            campo.value = valor;
-        });
-    });
-
-    document.querySelectorAll(".removeCaracteresNaoLetras").forEach(function (campo) {
-        campo.addEventListener("input", function (event) {
-            let valor = campo.value;
-
-            // Remove caracteres que não sejam números
-            valor = valor.replace(/[^0-9]+/g, '');
-
-            // Atualiza o valor do campo com o novo valor
-            campo.value = valor;
-        });
-    });
 
 }
